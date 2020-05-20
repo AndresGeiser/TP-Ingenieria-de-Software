@@ -11,10 +11,26 @@ form input{
     
 }
 
+
+#iniciarSesion{
+    font: 110% sans-serif;
+
+}
+
+#iniciarSesion a{
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
 #formulario{
     display: inline-block;   
 }
 
 #info{
     text-align: center;
+    font: 110% sans-serif;
+    padding: 10px 50px; 
+
+
 }
