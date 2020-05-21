@@ -1,0 +1,150 @@
+{
+        
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "properties": {
+                  "nombre": "Animal Home"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -58.400074,
+                    -34.590234
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "Como Reyes"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                     -58.412762,
+                     -34.591863
+                  ]
+                }
+              }, 
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "Coquetos"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                     -58.437958,
+                     -34.600018
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "San Sebastian"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -58.425982,
+                    -34.602780 
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "Venus"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -58.376621,
+                    -34.601975 
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "El Sol"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                      -58.380173,
+                      -34.604871 
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "Karen"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -58.378295,
+                    -34.599539, 
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "Mostaza"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                     -58.398347,
+                     -34.587919
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "Mi Perro"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                   -58.400064,
+                   -34.590214
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "Tropical"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -58.377902,
+                    -34.607549 
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                    "nombre": "Tu Mascota"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                     -58.382533,
+                     -34.605058
+                  ]
+                }
+              }
+              
+            ]
+          }
