@@ -80,23 +80,47 @@
     
 }
 
-.contenedor aside form {
+.contenedor aside .filtros {
     border-radius: 20px;
     border: 1px solid gray;
+    font: 100% sans-serif;
 }
 
-.contenedor aside div {
+.contenedor aside .filtros div {
     margin: 20px;
+}
+
+.contenedor aside .filtros .reporte,
+.contenedor aside .filtros .edad, 
+.contenedor aside .filtros .raza {
+    border-bottom: 1px solid gray;
     padding-bottom: 20px;
 }
 
-.contenedor aside .reporte,
-.contenedor aside .edad {
-    border-bottom: 1px solid gray;
+.contenedor aside .filtros .caja_boton {
+    display: flex;
+    justify-content: center;
 }
 
-.contenedor aside div h3 {
-    margin-bottom: 10px;
+.contenedor aside .filtros .caja_boton .btn_filtrar {
+    width: 80%;
+    font-size: 17px;
+    color: royalblue;
+    background: white;
+    border: 1px solid royalblue;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.contenedor aside .filtros .caja_boton .btn_filtrar:hover {
+    cursor: pointer;
+    color: white;
+    background: royalblue;
+}
+
+.contenedor aside .filtros div h3 {
+    margin-bottom: 10px
 }
 
 .contenedor .publicaciones {
@@ -146,9 +170,4 @@
 .publicaciones .card .datos p {
     font-size: 15px;
     line-height: 1.4;
-}
-
-.filtros{
-    font: 100% sans-serif;
-
 }
