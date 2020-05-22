@@ -9,6 +9,9 @@
     column-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
 }
 
 .contenedor header {
@@ -72,7 +75,7 @@
 .contenedor .menu a:hover {
     background: rgb(207, 82, 82);
 }
-
+ 
 .contenedor aside {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -84,6 +87,7 @@
     border-radius: 20px;
     border: 1px solid gray;
     font: 100% sans-serif;
+    background: white;
 }
 
 .contenedor aside .filtros div {
@@ -138,6 +142,7 @@
 .contenedor .publicaciones .card {
     width: 185px;
     height: 260px;
+    background: white;
     font: 100% sans-serif;
     border-radius: 30px;
     margin: 15px;
