@@ -1,69 +1,84 @@
 $(document).ready(function() {
+    
+    //Obtenemos el boton de filtrar 
+    var boton_filtrar = document.querySelector('.btn_filtrar');
+    
+    //Añadimos al boton la funcion 'filtrar' al hacer click
+    boton_filtrar.addEventListener('click', filtrar);
 
-    //Funcion que oculta/muestra las tarjetas segun el filtro de reporte 
-    $(".filtro_reporte").on( 'change', function() {
+    function filtrar() {
         
-        //Obtenemos el filtro que se presiono mediante su id 
-        var id = $(this).attr('id');
+        //Obtenemos todos los avisos (obtenemos todos los elementos con clase .card)
+        var avisos = document.querySelectorAll('.card')
+    
+        //Recorremos los avisos y nos fijamos si cumple con los filtros
+        avisos.forEach(aviso => {
+            if(cumpleConFiltros(aviso)) {
+                aviso.style.display = 'inline';
+            } else {
+                aviso.style.display = 'none'; //Ocultamos
+            }
+        });  
+    }
+    
+    
+    function cumpleConFiltros(aviso) {
         
-        //Verificamos si se activo
-        if(this.checked) {
-            if($('.filtro_edad#menor_a_uno').is(':checked')) { //Verificamos si el filtro de edad menor a un año esta activo
-                $('.card.menor_a_uno.'+ id).show();
-            }
-            if($('.filtro_edad#uno_a_cinco').is(':checked')) { //Verificamos si el filtro de edad de uno a cinco años esta activo
-                $('.card.uno_a_cinco.'+ id).show();
-            }
-            if($('.filtro_edad#seis_a_diez').is(':checked')) { //Verificamos si el filtro de seis a diez años esta activo
-                $('.card.seis_a_diez.'+ id).show();
-            }
-            if($('.filtro_edad#mas_de_diez').is(':checked')) { //Verificamos si el filtro de mas de diez años esta activo
-                $('.card.mas_de_diez.'+ id).show();
-            }
-        } else {              
-            $('.card.'+ id).hide(); //Ocultamos las tarjetas que coincidan con el filtro
+        if(cumpleTipoDeReporte(aviso) && cumpleConEdad(aviso) && cumpleConRaza(aviso)) {
+            return true;
+        }
+        return false;
+    }
+    
+    function cumpleTipoDeReporte(aviso) {
+        if($('.filtro_reporte#adopcion').is(':checked') && aviso.classList.contains('adopcion')) { //.classList devuelve un array con todas las clases de un elemento
+            return true;
+        }
+    
+        if($('.filtro_reporte#perdido').is(':checked') && aviso.classList.contains('perdido')) {
+            return true;
+        }
+    
+        if($('.filtro_reporte#encontrado').is(':checked') && aviso.classList.contains('encontrado')) {
+            return true;
+        }
+        return false;
+    }
+    
+    function cumpleConEdad(aviso) {
+        if($('.filtro_edad#menor_a_uno').is(':checked') && aviso.classList.contains('menor_a_uno')) {
+            return true;
+        }
+    
+        if($('.filtro_edad#uno_a_cinco').is(':checked') && aviso.classList.contains('uno_a_cinco')) {
+            return true;
+        }
+    
+        if($('.filtro_edad#seis_a_diez').is(':checked') && aviso.classList.contains('seis_a_diez')) {
+            return true;
+        }
+    
+        if($('.filtro_edad#mas_de_diez').is(':checked') && aviso.classList.contains('mas_de_diez')) {
+            return true;
+        }
+        return false;
+    }
+    
+    function cumpleConRaza(aviso) {
+    
+        //Obtenemos el elemento selec que contiene las razas
+        var elemento = document.querySelector('.filtro_raza');
+    
+        //Obtenemos el valor de la opcion seleccionada (.options da un arreglo de las opciones del selec, el .selectedIdex da el indice de la opcion que esta seleccionada, el .value nos da el valor de ese atributo)
+        var raza_Seleccionada = elemento.options[elemento.selectedIndex].value;
+    
+        if(raza_Seleccionada == 'todas')  {
+            return true;
+        }           
+        
+        if(aviso.classList.contains(raza_Seleccionada)) {
+            return true;
         }    
-    });
-
-
-    //Funcion que oculta/muestra las tarjetas segun la edad
-    $(".filtro_edad").on( 'change', function() {
-        
-        //Obtenemos el filtro que se presiono mediante su id 
-        var id = $(this).attr('id');
-        
-        if(this.checked) {
-            if($('.filtro_reporte#adopcion').is(':checked')) { //Verificamos si el filtro de adopcion esta activo
-                $('.card.adopcion.'+ id).show();
-            }
-            if($('.filtro_reporte#perdido').is(':checked')) { //Verificamos si el filtro de perdido esta activo
-                $('.card.perdido.'+ id).show();
-            }
-            if($('.filtro_reporte#encontrado').is(':checked')) { //Verificamos si el filtro de encontrado esta activo
-                $('.card.encontrado.'+ id).show();
-            }
-        } else {
-            $('.card.'+ id).hide();   
-        }    
-    });
-
-    /* $('.category_Aviso').click(function(){
-
-        //Tomo la categoria que selecciona en una variable
-        var catAviso = $(this).attr('category');
-
-        //Oculto los avisos
-        $('.card').hide();
-
-        //Muestro los avisos que coincidan con la categoria elegida
-        $('.card[category="'+catAviso+'"]').show();
-
-    });
-
-    $('.category_Aviso[category= "todo"]').click(function(){
-
-        //Volver a mostrar todos los avisos
-        $('.card').show();
-    }); */
-
+        return false;
+    }
 });
