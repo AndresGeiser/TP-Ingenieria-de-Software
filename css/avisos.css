@@ -151,6 +151,7 @@
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;  
     overflow: hidden;
+    cursor: pointer;
 }
 
 .publicaciones .card:hover {
@@ -176,3 +177,69 @@
     font-size: 15px;
     line-height: 1.4;
 }
+
+
+/* Ventana de detalles de los avisos */
+.cont_ventana {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.cont_ventana .ventana {
+    width: 700px;
+    height: 400px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cont_ventana .ventana .header {
+    width: 100%;
+    height: 10%;
+    background: royalblue;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cont_ventana .ventana .header button {
+    width: 10%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    background: royalblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cont_ventana .ventana .header button:hover {
+    background: red;
+}
+
+.cont_ventana .ventana .contenido {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.cont_ventana .ventana .contenido figure {
+    width: 50%;
+    height: 100%;
+    background: brown;
+}
+
+.cont_ventana .ventana .contenido .info {
+    width: 50%;
+    height: 100%;
+    background: white;
+}
+
