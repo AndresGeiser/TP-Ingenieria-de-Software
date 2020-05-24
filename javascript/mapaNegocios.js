@@ -22,7 +22,8 @@ function bootstrap()
             let geoJsonlayer = L.geoJson(data, {
                 onEachFeature: function(feature, layer)
                 {
-                    layer.bindPopup(feature.properties['nombre'] )
+                    
+                    layer.bindPopup(feature.properties.nombre + "<br>" +  feature.properties.horario)
                 }
             }).addTo(map)
             //Centro el mapa sobre los datos
