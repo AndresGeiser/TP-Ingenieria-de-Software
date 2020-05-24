@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     $(".btn_filtrar").click(filtrar);
-
+      
 });
 
 function filtrar() {
