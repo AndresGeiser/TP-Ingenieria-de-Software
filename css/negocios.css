@@ -3,24 +3,14 @@
 	padding: 0;
 }
 
-.contenedor { 
-    width: 100%;
-    display: grid;
-    column-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
-    background: #C6FFDD;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
-}
-
-header {
+.contenedor header {
     width: 100%;
     background: royalblue;
     overflow: hidden;
+    justify-content: space-between;
 }
 
-header h1 {
+.contenedor header h1 {
     color: aliceblue;
     font-size: 50px;
     font: oblique bold 300% cursive;
@@ -29,12 +19,12 @@ header h1 {
     margin-left: 10%;
 }
 
-header nav {
+.contenedor header nav {
     float: right;
     line-height: 100px;
 }
 
-header nav a {
+.contenedor header nav a {
     color: aliceblue;
     text-decoration: none;
     font-size: 20px;
@@ -45,36 +35,36 @@ header nav a {
     border-radius: 30px;
 }
 
-header nav a:hover {
+.contenedor header nav a:hover {
     font-size: 22px;
 }
 
-.registrarse {
+.contenedor .registrarse {
     background: rgb(255, 153, 0);
     font: 110% sans-serif;
 }
 
-.registrarse:hover {
+.contenedor .registrarse:hover {
     background: rgb(10, 10, 9);
 }
 
-.iniciarSesion{
+.contenedor .iniciarSesion{
     background: rgb(36, 228, 19);
     font: 110% sans-serif;
 }
 
-.iniciarSesion:hover{
+.contenedor .iniciarSesion:hover{
     background: rgb(10, 10, 9);
 }
 
-.menu {
+.contenedor .menu {
     background: brown;
     width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
-.menu a {
+.contenedor .menu a {
     float: left;
     color: aliceblue;
     text-decoration: none;
@@ -82,18 +72,18 @@ header nav a:hover {
     font-size: 20px;
     padding: 10px 50px; 
 }
-.menu a:hover {
+.contenedor .menu a:hover {
     background: rgb(207, 82, 82);
 }
 
 
-main {
+.contenedor main {
     width: 100%;
     height: 1500px;
     overflow: hidden;
 }
 
-.publicaciones {
+.contenedor .publicaciones {
     margin-top: 20px;
     margin-right: 20px;
     grid-column: span 3; 
@@ -105,7 +95,7 @@ main {
     justify-content: space-around; 
 }
 
-.publicaciones .card {
+.contenedor .publicaciones .card {
     width: 275px;
     height: 330px;
     font: 100% sans-serif;
@@ -118,21 +108,21 @@ main {
     overflow: hidden;
 }
 
-.publicaciones .card img {
+.contenedor .publicaciones .card img {
     width: 100%;
     height: 140px;
 }
 
-.publicaciones .card .datos {
+.contenedor .publicaciones .card .datos {
     padding: 13px;
     text-align: center;
 }
 
-.publicaciones .card .datos h3 {
+.contenedor .publicaciones .card .datos h3 {
     margin-bottom: 5px;
 }
 
-.publicaciones .card .datos p {
+.contenedor .publicaciones .card .datos p {
     font-size: 15px;
     line-height: 1.4;
 }
