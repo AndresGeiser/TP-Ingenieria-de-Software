@@ -4,6 +4,11 @@
 }
 
 .contenedor {
+    column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
     background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
 }
 
@@ -11,19 +16,22 @@
     width: 100%;
     background: royalblue;
     overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .contenedor header h1 {
     color: aliceblue;
     font-size: 50px;
     font: oblique bold 300% cursive;
-    float: left;
     line-height: 100px;
     margin-left: 10%;
 }
 
 .contenedor header nav {
-    float: right;
     line-height: 100px;
 }
 
@@ -83,7 +91,7 @@
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 20px;
-    
+    margin-right: 1000px;
 }
 
 .contenedor aside .filtros {
@@ -97,10 +105,11 @@
     margin: 20px;
 }
 
-.contenedor main {
-    width: 100%;
-    height: 1500px;
-    overflow: hidden;
+.contenedor aside .filtros .reporte,
+.contenedor aside .filtros .edad, 
+.contenedor aside .filtros .raza {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
 }
 
 .contenedor aside .filtros .caja_boton {
@@ -133,7 +142,7 @@
     margin-top: 20px;
     margin-right: 20px;
     grid-column: span 3; 
-    max-width: 1200px;
+    max-width: 3000px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
