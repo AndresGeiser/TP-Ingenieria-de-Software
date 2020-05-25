@@ -1,8 +1,61 @@
 $(document).ready(function() {
     
     $(".btn_filtrar").click(filtrar);
-      
+
+    $(".publicaciones").click(mostrarDetalles);
+    
+    $(".cerrar").click(cerrarVentana); 
+    
+    $(".card").ready(traerDatos());
 });
+
+
+function traerDatos(){
+
+    //console.log('dentro de la funcion');
+
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.open('GET', 'negocios.json', true);
+
+    xhttp.send();
+
+    xhttp.onreadystatechange = function(){
+
+        if(this.readyState == 4 && this.status ==200){
+            
+            let datos = JSON.parse(this.responseText);
+           // console.log(datos);
+            let info = document.querySelector('#info');
+
+            info.innerHTML = '';
+            
+
+            for (let item of datos){
+            //    console.log(item.raza);
+
+                info.innerHTML +=` 
+                <div class="${item.tipo}">
+                <figure>
+                    <img src="${item.ubicacion}" alt="Foto de perro">
+                </figure>
+                <div class="datos">
+                    <h3>${item.nombre}</h3>
+                    <h4><b>${item.negocio}</b></h4>
+                    <p>${item.horario}</p>
+                
+                </div>
+                </div>
+                `         
+
+                
+
+
+            }
+
+        }
+    }
+}
 
 function filtrar() {
         
@@ -55,5 +108,14 @@ function cumpleConHorario(aviso) {
         return true;
     }
     return false;
+}
+
+function mostrarDetalles() {
+    document.querySelector('.cont_ventana').style.visibility = "visible";
+    
+}
+
+function cerrarVentana() {
+    document.querySelector('.cont_ventana').style.visibility = "hidden";
 }
 

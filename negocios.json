@@ -1,7 +1,7 @@
 [
     {
     "tipo":"card veterinaria 1 lunesViernes sabado",
-    "ubicación":"Imagenes/Comercios/AnimalHome.jpg",
+    "ubicacion":"Imagenes/Comercios/AnimalHome.jpg",
     "nombre":"Animal Home",
     "descripcion":"Empresa familiar con más de 60 años en el rubro veterinario.",
     "negocio":"Veterinaria",
@@ -12,7 +12,7 @@
     },		
     {		
     "tipo":"card veterinaria 2 lunesViernes",
-    "ubicación":"Imagenes/Comercios/comoReyes.jpg",
+    "ubicacion":"Imagenes/Comercios/comoReyes.jpg",
     "nombre":"Como Reyes",
     "descripcion":"Aseguramos la mejor atención para su mascota.",
     "negocio":"Veterinaria",
@@ -23,7 +23,7 @@
     },		
     {		
     "tipo":"card peluqueriaCanina 3 sabado domingo",
-    "ubicación":"Imagenes/Comercios/Coquetos.jpg",
+    "ubicacion":"Imagenes/Comercios/Coquetos.jpg",
     "nombre":"Coquetos",
     "descripcion":"Baños Terapéuticos. Limpieza de Oídos y Corte de Uñas.",
     "negocio":"Peluquería canina",
@@ -34,7 +34,7 @@
     },		
     {		
     "tipo":"card veterinaria 4 lunesViernes sabado",
-    "ubicación":"Imagenes/Comercios/Sebastian.jpg",
+    "ubicacion":"Imagenes/Comercios/Sebastian.jpg",
     "nombre":"San Sebastian",
     "descripcion":"Excelencia en el servicio. Equipo De Especialistas. Radiología/Ecografía.",
     "negocio":"Veterinaria",
@@ -45,7 +45,7 @@
     },		
     {		
     "tipo":"card veterinaria 5 lunesViernes",
-    "ubicación":"Imagenes/Comercios/venus.png",
+    "ubicacion":"Imagenes/Comercios/venus.png",
     "nombre":"Venus",
     "descripcion":"Excelentes veterinarios que atienden con vocación, paciencia y amor.",
     "negocio":"Veterinaria",
@@ -56,7 +56,7 @@
     },		
     {		
     "tipo":"card forrajeria 6 lunesViernes sabado ",
-    "ubicación":"Imagenes/Comercios/elSol.jpg",
+    "ubicacion":"Imagenes/Comercios/elSol.jpg",
     "nombre":"El Sol",
     "descripcion":"Articulos y alimentos para perros, gatos,hamsters y peces.",
     "negocio":"Forrajería",
@@ -67,7 +67,7 @@
     },		
     {		
     "tipo":"card peluqueriaCanina 7 sabado ",
-    "ubicación":"Imagenes/Comercios/Karen.jpg",
+    "ubicacion":"Imagenes/Comercios/Karen.jpg",
     "nombre":"Karen",
     "descripcion":"Baño Completo shampoo natural, secado y peinado. Corte y Baño.",
     "negocio":"Peluquería canina",
@@ -78,7 +78,7 @@
     },		
     {		
     "tipo":"card forrajeria 8 lunesViernes sabado",
-    "ubicación":"Imagenes/Comercios/Mostaza.jpg",
+    "ubicacion":"Imagenes/Comercios/Mostaza.jpg",
     "nombre":"Mostaza",
     "descripcion":"Alimentos balanceados para Perros, Gatos y animales de corral.",
     "negocio":"Forrajería",
@@ -89,7 +89,7 @@
     },		
     {		
     "tipo":"card peluqueriaCanina 9 lunesViernes sabado",
-    "ubicación":"Imagenes/Comercios/PeluqueriaCanina.jpg",
+    "ubicacion":"Imagenes/Comercios/PeluqueriaCanina.jpg",
     "nombre":"Mi Perro",
     "descripcion":"Ambiente Especialmente Preparado para este Fin.",
     "negocio":"Peluquería canina",
@@ -100,7 +100,7 @@
     },		
     {		
     "tipo":"card veterinaria 10 lunesViernes sabado domingo",
-    "ubicación":"Imagenes/Comercios/Tropical.jpg",
+    "ubicacion":"Imagenes/Comercios/Tropical.jpg",
     "nombre":"Tropical",
     "descripcion":"Clínica Veterinaria de Pequeños Animales.",
     "negocio":"Veterinaria",
@@ -111,7 +111,7 @@
     },		
     {		
     "tipo":"card forrajeria 11 domingo",
-    "ubicación":"Imagenes/Comercios/tuMascota.jpg",
+    "ubicacion":"Imagenes/Comercios/tuMascota.jpg",
     "nombre":"Tu Mascota",
     "descripcion":"Venta por Mayor y Menor",
     "negocio":"Forrajería",
