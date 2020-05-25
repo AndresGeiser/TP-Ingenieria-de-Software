@@ -1,13 +1,58 @@
+
 $(document).ready(function() {
     
     $(".btn_filtrar").click(filtrar);
 
-    $(".card").click(mostrarDetalles);
+    $(".publicaciones").click(mostrarDetalles);
     
-    $(".cerrar").click(cerrarVentana);
+    $(".cerrar").click(cerrarVentana); 
+
+    $(".card").ready(traerDatos());
 
     
 });
+
+
+function traerDatos(){
+
+    //console.log('dentro de la funcion');
+
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.open('GET', 'avisos.json', true);
+
+    xhttp.send();
+
+    xhttp.onreadystatechange = function(){
+
+        if(this.readyState == 4 && this.status ==200){
+            
+            let datos = JSON.parse(this.responseText);
+           // console.log(datos);
+            let res = document.querySelector('#res');
+            res.innerHTML = '';
+
+            for (let item of datos){
+            //    console.log(item.raza);
+
+                res.innerHTML +=` 
+                <div class= "${item.tipo}">
+                <figure>
+                     <img src="${item.ubicacion}" alt="Foto de perro">
+                </figure>
+                 <div class="datos">
+                     <h3>${item.nombre}</h3>
+                     <p>${item.estado}</p>
+                     <p>${item.edad}</p>
+                     <p>${item.raza}</p>
+                 </div>
+                </div>
+                ` 
+            
+            }
+        }
+    }
+}
 
 function filtrar() {
         
