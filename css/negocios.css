@@ -7,35 +7,34 @@
     width: 100%;
     display: grid;
     column-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
     background: #C6FFDD;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
     background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
 }
 
 .contenedor header {
+    height: 100px;
     background: royalblue;
     grid-column-start: 1;
     grid-column-end: -1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contenedor header h1 {
     color: aliceblue;
     font-size: 50px;
     font: oblique bold 300% cursive;
-    line-height: 100px;
     margin-left: 10%;
 }
 
-.contenedor header nav {
-    line-height: 100px;
-}
+
 
 .contenedor header nav a {
-    color: aliceblue;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -45,27 +44,35 @@
     font: 110% sans-serif;
 }
 
-.contenedor header nav a:hover {
-    font-size: 15px;
-}
-
-.contenedor header nav .registrarse {
+.registrarse {
     background: rgb(255, 153, 0);
 }
 
-.contenedor header nav .iniciarSesion{
+.registrarse:hover {
+    background: white;
+    color: rgb(255, 153, 0);
+}
+
+.iniciarSesion{
     background: rgb(36, 228, 19);
 }
+
+.iniciarSesion:hover{
+    background: white;
+    color: rgb(36, 228, 19);
+}
+
 
 .contenedor .menu {
     grid-column-start: 1;
     grid-column-end: -1;
     background: brown;
     display: flex;
+    font-family: sans-serif ;
 }
 
 .contenedor .menu a {
-    color: aliceblue;
+    color: white;
     text-decoration: none;
     font: 100% sans-serif;
     font-size: 20px;
@@ -77,6 +84,7 @@
 }
  
 .contenedor aside {
+    width: 200px;
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 20px;
@@ -100,6 +108,7 @@
 .contenedor aside .filtros .raza {
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
+    overflow: hidden;
 }
 
 .contenedor aside .filtros .caja_boton {
@@ -115,11 +124,10 @@
     border: 1px solid royalblue;
     font-weight: bold;
     padding: 10px;
-    
+    cursor: pointer;
 }
 
 .contenedor aside .filtros .caja_boton .btn_filtrar:hover {
-    cursor: pointer;
     color: white;
     background: royalblue;
 }
@@ -131,8 +139,6 @@
 .contenedor .publicaciones {
     margin-top: 20px;
     margin-right: 20px;
-    grid-column: span 3; 
-    max-width: 1200px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -179,6 +185,19 @@
     line-height: 1.4;
 }
 
+.contenedor footer {
+    margin-top: 100px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background: black;
+    color: white;
+    height: 100px;
+    font-family: sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Ventana de detalles de los avisos */
 .cont_ventana {
@@ -201,12 +220,17 @@
     border: none;
     border-radius: 20px;
     overflow: hidden;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: sans-serif;
+    font-size: 13px;
 }
 
 .cont_ventana .ventana .header {
     width: 100%;
     height: 10%;
-    background: royalblue;
+    background: black;
     display: flex;
     justify-content: flex-end;
 }
@@ -235,12 +259,31 @@
 .cont_ventana .ventana .contenido figure {
     width: 50%;
     height: 100%;
-    background: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cont_ventana .ventana .contenido .info {
+.cont_ventana .ventana .contenido figure img{
+    width: 80%;
+    height: 80%;
+    border: 1px solid gray;
+}
+
+.cont_ventana .ventana .contenido .cont_info {
     width: 50%;
     height: 100%;
-    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.cont_ventana .ventana .contenido .cont_info .info {
+    width: 80%;
+    height: 80%;
+    border: 1px solid gray;
+    background: white;
+    padding: 10px;
+    overflow: auto;
+} 
 

@@ -1,15 +1,12 @@
 $(document).ready(function() {
-    
-    $(".btn_filtrar").click(filtrar);
-
-    $(".publicaciones").click(mostrarDetalles);
-    
     $(".cerrar").click(cerrarVentana); 
     
-    $(".card").ready(traerDatos());
+    $(".btn_filtrar").click(filtrar);  
+
+    traerDatos();
 });
 
-
+var datos;
 function traerDatos(){
 
     //console.log('dentro de la funcion');
@@ -24,7 +21,7 @@ function traerDatos(){
 
         if(this.readyState == 4 && this.status ==200){
             
-            let datos = JSON.parse(this.responseText);
+            datos = JSON.parse(this.responseText);
            // console.log(datos);
             let info = document.querySelector('#info');
 
@@ -35,9 +32,9 @@ function traerDatos(){
             //    console.log(item.raza);
 
                 info.innerHTML +=` 
-                <div class="${item.tipo}">
+                <div class="${item.tipo}" id="${item.id}" onclick="mostrarDetalles(this)">
                 <figure>
-                    <img src="${item.ubicacion}" alt="Foto de perro">
+                    <img src="${item.foto}" alt="Foto de perro">
                 </figure>
                 <div class="datos">
                     <h3>${item.nombre}</h3>
@@ -47,9 +44,6 @@ function traerDatos(){
                 </div>
                 </div>
                 `         
-
-                
-
 
             }
 
@@ -110,7 +104,28 @@ function cumpleConHorario(aviso) {
     return false;
 }
 
-function mostrarDetalles() {
+function mostrarDetalles(seleccionado) {
+    var foto =  document.querySelector('.cont_ventana .ventana figure img');
+    var info =  document.querySelector('.cont_ventana .ventana .info');
+    
+
+    datos.forEach(aviso => {
+        if(aviso.id == seleccionado.id) {
+        
+            foto.src = aviso.foto;
+            info.innerHTML = `
+            <p><b>Nombre de Negocio:</b> ${aviso.nombre}.</p><br>
+            <p><b>Tipo:</b> ${aviso.negocio}.</p><br>
+            <p><b>Descripción:</b> ${aviso.descripcion}.</p><br>
+            <p><b>Direccion:</b> ${aviso.direccion}.</p><br>
+            <p><b>Correo Electrónico:</b> ${aviso.email}.</p><br>
+            <p><b>Teléfono de contacto:</b> ${aviso.telefono}.</p><br>
+            <p><b>Días y Horarios de Atención:</b> ${aviso.horario}.</p><br>
+            `;
+             
+        }
+     });
+ 
     document.querySelector('.cont_ventana').style.visibility = "visible";
     
 }
