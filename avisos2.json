@@ -1,0 +1,527 @@
+[
+	{	
+		"id": 1,
+		"fecha": "21/21/2121",
+		"nombre": "Chiquito",
+		"estado": "Encontrado",
+		"edad":	"8 años",
+		"raza": "Akita",
+		"foto": "Imagenes/Avisos/akita3.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+		},
+		"tipo": "card encontrado seis_a_diez akita"
+	},
+
+	{
+		"id": 2,
+		"fecha": "21/21/2121",
+		"nombre": "Donatello",
+		"estado": "En adopción",
+		"edad":	"2 meses",
+		"raza": "Beagle",
+		"foto": "Imagenes/Avisos/beagle3.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion menor_a_uno beagle"
+	},
+
+
+	{
+		"id": 3,
+		"fecha": "21/21/2121",
+		"nombre": "Tybo",
+		"estado": "Perdido",
+		"edad":	"9 años",
+		"raza": "Boxer",
+		"foto": "Imagenes/Avisos/boxer1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido seis_a_diez boxer"
+	},
+
+
+	{
+		"id": 4,
+		"fecha": "21/21/2121",
+		"nombre": "Lambie",
+		"estado": "Perdido",
+		"edad":	"6 años",
+		"raza": "Bull terrier",
+		"foto": "Imagenes/Avisos/bull_terrier1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido seis_a_diez bull_terrier"
+	},
+
+
+	{
+		"id": 5,
+		"fecha": "21/21/2121",
+		"nombre": "Luna",
+		"estado": "Perdido",
+		"edad":	"2 años",
+		"raza": "Akita",
+		"foto": "Imagenes/Avisos/akita1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido uno_a_cinco akita"
+	},
+
+
+	{
+		"id": 6,
+		"fecha": "21/21/2121",
+		"nombre": "Sochi",
+		"estado": "Encontrado",
+		"edad":	"11 años",
+		"raza": "Cane corso",
+		"foto": "Imagenes/Avisos/cane_corso1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card encontrado mas_de_diez cane_corso"
+	},
+
+
+	{
+		"id": 7,
+		"fecha": "21/21/2121",
+		"nombre": "Copito",
+		"estado": "Perdido",
+		"edad":	"6 años",
+		"raza": "Caniche",
+		"foto": "Imagenes/Avisos/caniche2.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido seis_a_diez caniche"
+	},
+
+
+	{
+		"id": 8,
+		"fecha": "21/21/2121",
+		"nombre": "Chippy",
+		"estado": "En adopción",
+		"edad":	"11 años",
+		"raza": "Beagle",
+		"foto": "Imagenes/Avisos/beagle2.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card perdido mas_de_diez beagle"
+	},
+
+	{
+		"id": 9,
+		"fecha": "21/21/2121",
+		"nombre": "Fresa",
+		"estado": "Perdido",
+		"edad":	"5 años",
+		"raza": "Chihuahua",
+		"foto": "Imagenes/Avisos/chihuahua1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido uno_a_cinco chihuahua"
+	},
+
+
+	{
+		"id": 10,
+		"fecha": "21/21/2121",
+		"nombre": "Mingo",
+		"estado": "Perdido",
+		"edad":	"9 años",
+		"raza": "Chow chow",
+		"foto": "Imagenes/Avisos/chow_chow1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido seis_a_diez chow_chow"
+	},
+
+
+	{
+		"id": 11,
+		"fecha": "21/21/2121",
+		"nombre": "Rodi",
+		"estado": "En adopción",
+		"edad":	"6 meses",
+		"raza": "Chow chow",
+		"foto": "Imagenes/Avisos/chow_chow2.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion menor_a_uno chow_chow"
+	},
+
+
+	{
+		"id": 12,
+		"fecha": "21/21/2121",
+		"nombre": "Boby",
+		"estado": "En adopción",
+		"edad":	"1 mes",
+		"raza": "Akita",
+		"foto": "Imagenes/Avisos/akita2.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion menor_a_uno akita"
+	},
+
+
+	{
+		"id": 13,
+		"fecha": "21/21/2121",
+		"nombre": "Cloy",
+		"estado": "En adopción",
+		"edad":	"1 año",
+		"raza": "Dalmata",
+		"foto": "Imagenes/Avisos/dalmata1.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card encontrado uno_a_cinco dalmata"
+	},
+
+
+	{
+		"id": 14,
+		"fecha": "21/21/2121",
+		"nombre": "Caiman",
+		"estado": "Encontrado",
+		"edad":	"7 años",
+		"raza": "Dalmata",
+		"foto": "Imagenes/Avisos/dalmata2.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card encontrado seis_a_diez dalmata"
+	},
+
+
+	{
+		"id": 15,
+		"fecha": "21/21/2121",
+		"nombre": "Caco",
+		"estado": "Perdido",
+		"edad":	"11 años",
+		"raza": "San Bernardo",
+		"foto": "Imagenes/Avisos/san_bernardo2.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido mas_de_diez san_bernardo"
+	},
+
+	{		
+		"id": 16,
+		"fecha": "21/21/2121",
+		"nombre":"Darwin",
+		"estado":"Perdido",
+		"edad":"7 años.",
+		"raza":"Dobermann.",
+		"foto":"Imagenes/Avisos/doberman1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido seis_a_diez dobermann"
+	},		
+	{		
+		"id": 17,
+		"fecha": "21/21/2121",
+		"nombre":"Joe",
+		"estado":"En adopción",
+		"edad":"1 mes.",
+		"raza":"Dobermann.",
+		"foto":"Imagenes/Avisos/doberman2.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion menor_a_uno dobermann"
+	},		
+	{		
+		"id": 18,
+		"fecha": "21/21/2121",
+		"nombre":"Jake",
+		"estado":"En adopción",
+		"edad":"8 años.",
+		"raza":"Dogo argentino.",
+		"foto":"Imagenes/Avisos/dogo_argentino1.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion seis_a_diez dogo_argentino"
+	},		
+	{		
+		"id": 19,
+		"fecha": "21/21/2121",
+		"nombre":"Kappy",
+		"estado":"Encontrado",
+		"edad":"3 años.",
+		"raza":"Caniche.",
+		"foto":"Imagenes/Avisos/caniche1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card encontrado uno_a_cinco caniche",
+	},		
+	{		
+		"id": 20,
+		"fecha": "21/21/2121",
+		"nombre":"Tami",
+		"estado":"Encontrado",
+		"edad":"7 años.",
+		"raza":"Dogo argentino.",
+		"foto":"Imagenes/Avisos/dogo_argentino2.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card encontrado seis_a_diez dogo_argentino"
+	},		
+	{	
+		"id": 21,
+		"fecha": "21/21/2121",	
+		"nombre":"Koda",
+		"estado":"Perdido",
+		"edad":"10 años.",
+		"raza":"Dogo de burdeos.",
+		"foto":"Imagenes/Avisos/dogo_de_burdeos1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido seis_a_diez dogo_de_burdeos"
+	},		
+	{	
+		"id": 22,
+		"fecha": "21/21/2121",	
+		"nombre":"Momi",
+		"estado":"En adopción",
+		"edad":"4 años.",
+		"raza":"Galgo.",
+		"foto":"Imagenes/Avisos/galgo1.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion uno_a_cinco galgo"
+	},		
+	{	
+		"id": 23,
+		"fecha": "21/21/2121",	
+		"nombre":"Aggy",
+		"estado":"Encontrado",
+		"edad":"6 años.",
+		"raza":"Galgo.",
+		"foto":"Imagenes/Avisos/galgo2.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card encontrado seis_a_diez galgo"
+	},		
+	{		
+		"id": 24,
+		"fecha": "21/21/2121",
+		"nombre":"Dark",
+		"estado":"Perdido",
+		"edad":"3 años.",
+		"raza":"Gran danés.",
+		"foto":"Imagenes/Avisos/gran_danes1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido uno_a_cinco gran_danes"
+	},		
+	{		
+		"id": 25,
+		"fecha": "21/21/2121",
+		"nombre":"Ron",
+		"estado":"En adopción",
+		"edad":"1 mes.",
+		"raza":"Boxer.",
+		"foto":"Imagenes/Avisos/boxer2.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion menor_a_uno boxer"
+	},		
+	{		
+		"id": 26,
+		"fecha": "21/21/2121",
+		"nombre":"Chok",
+		"estado":"En adopción",
+		"edad":"13 años.",
+		"raza":"Gran danés.",
+		"foto":"Imagenes/Avisos/gran_danes2.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion mas_de_diez gran_danes"
+	},		
+	{		
+		"id": 27,
+		"fecha": "21/21/2121",
+		"nombre":"Kiko",
+		"estado":"Perdido",
+		"edad":"7 años.",
+		"raza":"Pit bull.",
+		"foto":"Imagenes/Avisos/pit_bull1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido seis_a_diez pit_bull"
+	},		
+	{		
+		"id": 28,
+		"fecha": "21/21/2121",
+		"nombre":"Toby",
+		"estado":"Encontrado",
+		"edad":"5 años.",
+		"raza":"Pit bull.",
+		"foto":"Imagenes/Avisos/pit_bull2.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card encontrado uno_a_cinco pit_bull"
+	},		
+	{		
+		"id": 29,
+		"fecha": "21/21/2121",
+		"nombre":"Drago",
+		"estado":"En adopción",
+		"edad":"1 mes.",
+		"raza":"Pit bull.",
+		"foto":"Imagenes/Avisos/pit_bull3.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion menor_a_uno pit_bull"
+	},		
+	{	
+		"id": 30,
+		"fecha": "21/21/2121",	
+		"nombre":"Nico",
+		"estado":"Perdido",
+		"edad":"7 años.",
+		"raza":"Rottweiler.",
+		"foto":"Imagenes/Avisos/rottweiler1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido seis_a_diez rottweiler"
+	},		
+	{		
+		"id": 31,
+		"fecha": "21/21/2121",
+		"nombre":"Bob",
+		"estado":"En adopción",
+		"edad":"2 meses.",
+		"raza":"Rottweiler.",
+		"foto":"Imagenes/Avisos/rottweiler2.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion menor_a_uno rottweiler"
+	},		
+	{		
+		"id": 32,
+		"fecha": "21/21/2121",
+		"nombre":"Jas",
+		"estado":"Encontrado",
+		"edad":"7 años.",
+		"raza":"Sabueso.",
+		"foto":"Imagenes/Avisos/sabueso1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card encontrado seis_a_diez sabueso"
+	},		
+	{		
+		"id": 33,
+		"fecha": "21/21/2121",
+		"nombre":"Fantasma",
+		"estado":"Perdido",
+		"edad":"5 años.",
+		"raza":"Beagle.",
+		"foto":"Imagenes/Avisos/beagle1.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card perdido uno_a_cinco beagle"
+	},		
+	{		
+		"id": 34,
+		"fecha": "21/21/2121",
+		"nombre":"Gago",
+		"estado":"En adopción",
+		"edad":"7 años.",
+		"raza":"San bernardo.",
+		"foto":"Imagenes/Avisos/san_bernardo1.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion seis_a_diez san_bernardo"
+	},		
+	{		
+		"id": 35,
+		"fecha": "21/21/2121",
+		"nombre":"Nur",
+		"estado":"Encontrado",
+		"edad":"12 años.",
+		"raza":"Bull terrier.",
+		"foto":"Imagenes/Avisos/bull_terrier2.jpg",
+		"descripcion": "Sin descripción",
+		"suceso": {
+            "fecha": "21/21/2121",
+            "direccion": "Tres Sargentos 2121, Jose C. Paz"
+        },
+		"tipo": "card encontrado mas_de_diez bull_terrier"
+	},		
+	{	
+		"id": 36,
+		"fecha": "21/21/2121",	
+		"nombre":"Pochoclo",
+		"estado":"En adopción",
+		"edad":"2 años.",
+		"raza":"Akita.",
+		"foto":"Imagenes/Avisos/akita4.jpg",
+		"descripcion": "Sin descripción",
+		"cuidados": "Sin informacion.",
+		"tipo": "card adopcion uno_a_cinco akita"
+	}
+]
