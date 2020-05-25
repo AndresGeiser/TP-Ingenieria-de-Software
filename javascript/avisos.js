@@ -1,21 +1,18 @@
 
 $(document).ready(function() {
     
-    $(".btn_filtrar").click(filtrar);
-
-    $(".publicaciones").click(mostrarDetalles);
-    
     $(".cerrar").click(cerrarVentana); 
-
-    $(".card").ready(traerDatos());
-
+    
+    $(".btn_filtrar").click(filtrar);
+    
+    traerDatos();
     
 });
 
+var datos;
+
 
 function traerDatos(){
-
-    //console.log('dentro de la funcion');
 
     const xhttp = new XMLHttpRequest();
 
@@ -24,31 +21,29 @@ function traerDatos(){
     xhttp.send();
 
     xhttp.onreadystatechange = function(){
-
+        
         if(this.readyState == 4 && this.status ==200){
             
-            let datos = JSON.parse(this.responseText);
-           // console.log(datos);
+            datos = JSON.parse(this.responseText);
+            
             let res = document.querySelector('#res');
             res.innerHTML = '';
 
-            for (let item of datos){
-            //    console.log(item.raza);
+            for (let item of datos) {
 
                 res.innerHTML +=` 
-                <div class= "${item.tipo}">
+                <div class= "${item.tipo}" id="${item.id}" onclick="mostrarDetalles(this)">
                 <figure>
-                     <img src="${item.ubicacion}" alt="Foto de perro">
+                     <img src="${item.foto}" alt="Foto de perro">
                 </figure>
                  <div class="datos">
                      <h3>${item.nombre}</h3>
                      <p>${item.estado}</p>
-                     <p>${item.edad}</p>
-                     <p>${item.raza}</p>
+                     <p>Edad: ${item.edad}</p>
+                     <p>Raza: ${item.raza}</p>
                  </div>
                 </div>
                 ` 
-            
             }
         }
     }
@@ -129,7 +124,38 @@ function cumpleConRaza(aviso) {
     return false;
 }
 
-function mostrarDetalles() {
+function mostrarDetalles(seleccionado) {
+
+    var foto =  document.querySelector('.cont_ventana .ventana figure img');
+    var info =  document.querySelector('.cont_ventana .ventana .info');
+    
+    datos.forEach(aviso => {
+       if(aviso.id == seleccionado.id) {
+            foto.src = aviso.foto;
+            if(aviso.estado == 'En adopción') {
+                info.innerHTML = `
+                <p><b>Fecha de publicación:</b> ${aviso.fecha}.</p><br>
+                <p><b>Estado:</b> ${aviso.estado}.</p><br>
+                <p><b>Nombre:</b> ${aviso.nombre}.</p><br>
+                <p><b>Edad:</b> ${aviso.edad}.</p><br>
+                <p><b>Raza:</b> ${aviso.raza}.</p><br>
+                <p><b>Cuidados:</b> ${aviso.cuidados}.</p><br>
+                <p><b>Descripción:</b> ${aviso.descripcion}.</p><br>
+                `;
+            } else {
+                info.innerHTML = `
+                <p><b>Fecha de publicación:</b> ${aviso.fecha}.</p><br>
+                <p><b>Estado:</b> ${aviso.estado}.</p><br>
+                <p><b>Nombre:</b> ${aviso.nombre}.</p><br>
+                <p><b>Edad:</b> ${aviso.edad}.</p><br>
+                <p><b>Raza:</b> ${aviso.raza}.</p><br>
+                <p><b>Suceso:</b> Ocurrio el ${aviso.suceso.fecha} en ${aviso.suceso.direccion}.</p><br>
+                <p><b>Descripción:</b> ${aviso.descripcion}.</p><br>
+                `;
+            }
+       }
+    });
+
     document.querySelector('.cont_ventana').style.visibility = "visible";
 }
 
