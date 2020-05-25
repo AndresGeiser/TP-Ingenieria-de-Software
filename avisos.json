@@ -125,9 +125,197 @@
 	"raza": "Dalmata",
 	"ubicacion": "Imagenes/Avisos/dalmata1.jpg",
 	"tipo": "card encontrado uno_a_cinco dalmata"
-}
+},
 
 
+{
+	"nombre": "Caiman",
+	"estado": "Encontrado",
+	"edad":	"7 años",
+	"raza": "Dalmata",
+	"ubicacion": "Imagenes/Avisos/dalmata2.jpg",
+	"tipo": "card encontrado seis_a_diez dalmata"
+},
+
+
+{
+	"nombre": "Caco",
+	"estado": "Perdido",
+	"edad":	"11 años",
+	"raza": "San Bernardo",
+	"ubicacion": "Imagenes/Avisos/san_bernardo2.jpg",
+	"tipo": "card perdido mas_de_diez san_bernardo"
+},
+
+{		
+	"tipo": "card perdido seis_a_diez dobermann",
+	"ubicacion":"Imagenes/Avisos/doberman1.jpg",
+	"nombre":"Darwin",
+	"estado":"Perdido",
+	"edad":"Edad: 7 años.",
+	"raza":"Raza: Dobermann."
+	},		
+	{		
+	"tipo": "card adopcion menor_a_uno dobermann",
+	"ubicacion":"Imagenes/Avisos/doberman2.jpg",
+	"nombre":"Joe",
+	"estado":"En adopción",
+	"edad":"Edad: 1 mes.",
+	"raza":"Raza: Dobermann."
+	},		
+	{		
+	"tipo": "card adopcion seis_a_diez dogo_argentino",
+	"ubicacion":"Imagenes/Avisos/dogo_argentino1.jpg",
+	"nombre":"Jake",
+	"estado":"En adopción",
+	"edad":"Edad: 8 años.",
+	"raza":"Raza: Dogo argentino."
+	},		
+	{		
+	"tipo": "card encontrado uno_a_cinco caniche",
+	"ubicacion":"Imagenes/Avisos/caniche1.jpg",
+	"nombre":"Kappy",
+	"estado":"Encontrado",
+	"edad":"Edad: 3 años.",
+	"raza":"Raza: Caniche."
+	},		
+	{		
+	"tipo": "card encontrado seis_a_diez dogo_argentino",
+	"ubicacion":"Imagenes/Avisos/dogo_argentino2.jpg",
+	"nombre":"Tami",
+	"estado":"Encontrado",
+	"edad":"Edad: 7 años.",
+	"raza":"Raza: Dogo argentino."
+	},		
+	{		
+	"tipo": "card perdido seis_a_diez dogo_de_burdeos",
+	"ubicacion":"Imagenes/Avisos/dogo_de_burdeos1.jpg",
+	"nombre":"Koda",
+	"estado":"Perdido",
+	"edad":"Edad: 10 años.",
+	"raza":"Raza: Dogo de burdeos."
+	},		
+	{		
+	"tipo": "card adopcion uno_a_cinco galgo",
+	"ubicacion":"Imagenes/Avisos/galgo1.jpg",
+	"nombre":"Momi",
+	"estado":"En adopción",
+	"edad":"Edad: 4 años.",
+	"raza":"Raza: Galgo."
+	},		
+	{		
+	"tipo": "card encontrado seis_a_diez galgo",
+	"ubicacion":"Imagenes/Avisos/galgo2.jpg",
+	"nombre":"Aggy",
+	"estado":"Encontrado",
+	"edad":"Edad: 6 años.",
+	"raza":"Raza: Galgo."
+	},		
+	{		
+	"tipo": "card perdido uno_a_cinco gran_danes",
+	"ubicacion":"Imagenes/Avisos/gran_danes1.jpg",
+	"nombre":"Dark",
+	"estado":"Perdido",
+	"edad":"Edad: 3 años.",
+	"raza":"Raza: Gran danés."
+	},		
+	{		
+	"tipo": "card adopcion menor_a_uno boxer",
+	"ubicacion":"Imagenes/Avisos/boxer2.jpg",
+	"nombre":"Ron",
+	"estado":"En adopción",
+	"edad":"Edad: 1 mes.",
+	"raza":"Raza: Boxer."
+	},		
+	{		
+	"tipo": "card adopcion mas_de_diez gran_danes",
+	"ubicacion":"Imagenes/Avisos/gran_danes2.jpg",
+	"nombre":"Chok",
+	"estado":"En adopción",
+	"edad":"Edad: 13 años.",
+	"raza":"Raza: Gran danés."
+	},		
+	{		
+	"tipo": "card perdido seis_a_diez pit_bull",
+	"ubicacion":"Imagenes/Avisos/pit_bull1.jpg",
+	"nombre":"Kiko",
+	"estado":"Perdido",
+	"edad":"Edad: 7 años.",
+	"raza":"Raza: Pit bull."
+	},		
+	{		
+	"tipo": "card encontrado uno_a_cinco pit_bull",
+	"ubicacion":"Imagenes/Avisos/pit_bull2.jpg",
+	"nombre":"Toby",
+	"estado":"Encontrado",
+	"edad":"Edad: 5 años.",
+	"raza":"Raza: Pit bull."
+	},		
+	{		
+	"tipo": "card adopcion menor_a_uno pit_bull",
+	"ubicacion":"Imagenes/Avisos/pit_bull3.jpg",
+	"nombre":"Drago",
+	"estado":"En adopción",
+	"edad":"Edad: 1 mes.",
+	"raza":"Raza: Pit bull."
+	},		
+	{		
+	"tipo": "card perdido seis_a_diez rottweiler",
+	"ubicacion":"Imagenes/Avisos/rottweiler1.jpg",
+	"nombre":"Nico",
+	"estado":"Perdido",
+	"edad":"Edad: 7 años.",
+	"raza":"Raza: Rottweiler."
+	},		
+	{		
+	"tipo": "card adopcion menor_a_uno rottweiler",
+	"ubicacion":"Imagenes/Avisos/rottweiler2.jpg",
+	"nombre":"Bob",
+	"estado":"En adopción",
+	"edad":"Edad: 2 meses.",
+	"raza":"Raza: Rottweiler."
+	},		
+	{		
+	"tipo": "card encontrado seis_a_diez sabueso",
+	"ubicacion":"Imagenes/Avisos/sabueso1.jpg",
+	"nombre":"Jas",
+	"estado":"Encontrado",
+	"edad":"Edad: 7 años.",
+	"raza":"Raza: Sabueso."
+	},		
+	{		
+	"tipo": "card perdido uno_a_cinco beagle",
+	"ubicacion":"Imagenes/Avisos/beagle1.jpg",
+	"nombre":"Fantasma",
+	"estado":"Perdido",
+	"edad":"Edad: 5 años.",
+	"raza":"Raza: Beagle."
+	},		
+	{		
+	"tipo": "card adopcion seis_a_diez san_bernardo",
+	"ubicacion":"Imagenes/Avisos/san_bernardo1.jpg",
+	"nombre":"Gago",
+	"estado":"En adopción",
+	"edad":"Edad: 7 años.",
+	"raza":"Raza: San bernardo."
+	},		
+	{		
+	"tipo": "card encontrado mas_de_diez bull_terrier",
+	"ubicacion":"Imagenes/Avisos/bull_terrier2.jpg",
+	"nombre":"Nur",
+	"estado":"Encontrado",
+	"edad":"Edad: 12 años.",
+	"raza":"Raza: Bull terrier."
+	},		
+	{		
+	"tipo": "card adopcion uno_a_cinco akita",
+	"ubicacion":"Imagenes/Avisos/akita4.jpg",
+	"nombre":"Pochoclo",
+	"estado":"En adopción",
+	"edad":"Edad: 2 años.",
+	"raza":"Raza: Akita."
+	}
+	
 
 
 
