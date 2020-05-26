@@ -8,18 +8,41 @@ function bootstrap()
         return response.json();
     })
     .then(function(myJson) {
-    //print para comprobar que se ubtuvo la alerta
-        console.log(myJson[0]);
-    // Se insertan los atributos de las alertas en clima.html
-        const contenedor = document.querySelector('#alertas');
-        contenedor.innerHTML += '<p>'+ "Titulo: " + myJson[0].title + '</p>';
-        contenedor.innerHTML += '<p>'+ "Fecha: " + myJson[0].date + '</p>';
-        contenedor.innerHTML += '<p>'+ "Hora: " + myJson[0].hour + '</p>';
-        contenedor.innerHTML += '<p>'+ "Descripción: " + myJson[0].description + '</p>';
-        contenedor.innerHTML += '<p>'+ "Proxima actualización: " + myJson[0].update + '</p>';
-        
-     
-});
+    //Referencia al contenedor donde se ubicaran las alertas    
+    const contenedor = document.querySelector('#alertas');
+    
+
+    //Para cada alerta se agregan los datos a clima.html
+    for(e of myJson){
+
+    var zonasAfectadas = '';
+        //Rescatamos las zonas afectadas por cada alerta registrada
+        for(i in e.zones)
+        {   
+            zonasAfectadas += e.zones[i] + " ";
+        }
+
+        contenedor.innerHTML += `
+        <div class = "alerta" >
+          <div class = "${e.status}"> 
+          <h2>  ${e.status + ": " + e.title}  </h2>
+          </div>
+          <div class = "zonas" >
+            <p> <b>Zonas</b>:  ${zonasAfectadas} </p>
+          </div>
+          <div class = "datos">
+            <p> ${e.description} </p>
+          </div> 
+          <div class = "fecha">
+            <p> <b>Fecha de emisión</b>: ${e.date} </p>
+          <div class = "update">
+            <p> <b>Proxima actualización</b>: ${e.update} </p> 
+          </div>
+        </div>  
+         `
+    }
+
+    });
 }
 
 $(bootstrap)

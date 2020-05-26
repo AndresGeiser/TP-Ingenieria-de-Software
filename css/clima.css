@@ -136,7 +136,59 @@ main {
     height: 200px;
     margin: auto;
     margin-top: 20px;
-    border: 1px solid gray;
-    border-radius: 25px;
     text-align: center;
+}
+
+.alertas .alerta{
+    margin-top: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 60%;
+    align-content: center;
+}
+
+.alertas .alerta .Cese{
+    font: 100% sans-serif;
+    background-color: rgba(72, 209, 219, 0.603);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 2px solid gray;
+    color: rgba(36, 36, 36, 0.993);
+}
+
+.alertas .alerta .Aviso{
+    font: 100% sans-serif;
+    background-color: rgba(238, 48, 14, 0.753);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 2px solid gray;
+    color: rgba(36, 36, 36, 0.993);
+}
+
+.alertas .alerta .zonas p{
+    font: 125% sans-serif;
+    color: rgba(77, 76, 76, 0.993);
+    text-align: justify;
+    border-bottom: 2px solid gray;
+}
+
+.alertas .alerta .datos p{
+    font: 110% sans-serif;
+    text-align: justify;
+    align-content: center;
+}
+
+.alertas .alerta .fecha p{
+    font: 110% sans-serif;
+    color: rgba(77, 76, 76, 0.993);
+    text-align: justify;
+    align-content: center;
+}
+
+.alertas .alerta .update{
+    font: 100% sans-serif;
+    text-align: justify;
+    border-top: 2px solid gray;
+    color: rgba(77, 76, 76, 0.993);
+
 }

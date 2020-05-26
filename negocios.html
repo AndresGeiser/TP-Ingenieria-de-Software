@@ -8,6 +8,7 @@
         <title>Mascotas</title>
         <script src="javascript/jquery-3.5.1.min.js"></script>
         <script src = javascript/negocios.js></script>
+        <script src="https://kit.fontawesome.com/4d3490a8ea.js" crossorigin="anonymous"></script>
         <link rel = "stylesheet" href = "css/negocios.css">
     </head>
     
@@ -30,7 +31,7 @@
             
             <aside>
                 <div class= "filtros">
-                    <div class="servicio">
+                    <div class="reporte">
                         <h3>Servicio</h3>
             
                         <input type="checkbox" class="filtro_servicio" id="veterinaria" checked>
@@ -57,179 +58,37 @@
                     </div>
                     
                     <div class="caja_boton">
-                        <button class="btn_filtrar">FILTRAR</button>
+                        <button class="btn_filtrar"><i class="fas fa-search"></i>FILTRAR</button>
                     </div>
                 </div>
             </aside>
-            <main class="publicaciones">
-                <div class="card veterinaria 1 lunesViernes sabado">
-                    <figure>
-                        <img src="Imagenes/Comercios/AnimalHome.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Animal Home</h3>
-                        <p>Empresa familiar con más de 60 años en el rubro veterinario.</p>
-                        <p><b>Veterinaria</b></p>
-                        <p>animalhome@gmail.com</p>
-                        <p>Tel.: 4806-4758</p>
-                        <p>Av. Pueyrredón 1801, Barrio Norte</p>
-                        <p>L a S de 9 a 20hs</p>
-                    </div>
-                </div>
-
-                <div class="card veterinaria 2 lunesViernes">
-                    <figure>
-                        <img src="Imagenes/Comercios/comoReyes.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Como Reyes</h3>
-                        <p>Aseguramos la mejor atención para su mascota.</p>
-                        <p><b>Veterinaria</b></p>
-                        <p>comoreyes@gmail.com</p>
-                        <p>Tel.: 5612-9954</p>
-                        <p>Rep. Dominicana 3308, Palermo</p>
-                        <p>L a V de 9 a 20hs</p>
-                    </div>
-                </div>
-
-                <div class="card peluqueriaCanina 3 sabado domingo">
-                    <figure>
-                        <img src="Imagenes/Comercios/Coquetos.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Coquetos</h3>
-                        <p>Baños Terapéuticos. Limpieza de Oídos y Corte de Uñas.</p>
-                        <p><b>Peluquería canina</b></p>
-                        <p>coquetos@gmail.com</p>
-                        <p>Tel.: 3253-9741</p>
-                        <p>Av. Corrientes 5139, Villa Crespo</p>
-                        <p>S a D de 10 a 15hs</p>
-                    </div>
-                </div>
-
-                <div class="card veterinaria 4 lunesViernes sabado">
-                    <figure>
-                        <img src="Imagenes/Comercios/Sebastian.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>San Sebastian</h3>
-                        <p>Excelencia en el servicio. Equipo De Especialistas. Radiología/Ecografía.</p>
-                        <p><b>Veterinaria</b></p>
-                        <p>sansebastian@gmail.com</p>
-                        <p>Tel.: 4806-4758</p>
-                        <p>Av. Corrientes 4314, Almagro</p>
-                        <p>L a S de 10 a 19hs</p>
-                    </div>
-                </div>
-
-                <div class="card veterinaria 5 lunesViernes">
-                    <figure>
-                        <img src="Imagenes/Comercios/venus.png" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Venus</h3>
-                        <p>Excelentes veterinarios que atienden con vocación, paciencia y amor.</p>
-                        <p><b>Veterinaria</b></p>
-                        <p>Venus@gmail.com</p>
-                        <p>Tel.: 3260-9954</p>
-                        <p>Maipú 525, Microcentro</p>
-                        <p>L a V de 9 a 20hs</p>
-                    </div>
-                </div>
-
-                <div class="card forrajeria 6 lunesViernes sabado ">
-                    <figure>
-                        <img src="Imagenes/Comercios/elSol.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>El Sol</h3>
-                        <p>Articulos y alimentos para perros, gatos,hamsters y peces.</p>
-                        <p><b>Forrajería</b></p>
-                        <p>elsol@gmail.com</p>
-                        <p>Tel.: 6312-4758</p>
-                        <p>Sarmiento 948, San Nicolas</p>
-                        <p>L a S de 9 a 20hs</p>
-                    </div>
-                </div>
-
-                <div class="card peluqueriaCanina 7 sabado ">
-                    <figure>
-                        <img src="Imagenes/Comercios/Karen.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Karen</h3>
-                        <p>Baño Completo shampoo natural, secado y peinado. Corte y Baño.</p>
-                        <p><b>Peluquería canina</b></p>
-                        <p>Karen@gmail.com</p>
-                        <p>Tel.: 5406-4758</p>
-                        <p></p>
-                        <p>S de 8 a 17hs</p>
-                    </div>
-                </div>
-
-                <div class="card forrajeria 8 lunesViernes sabado">
-                    <figure>
-                        <img src="Imagenes/Comercios/Mostaza.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Mostaza</h3>
-                        <p>Alimentos balanceados para Perros, Gatos y animales de corral.</p>
-                        <p><b>Forrajería</b></p>
-                        <p>mostaza@gmail.com</p>
-                        <p>Tel.: 4416-9548</p>
-                        <p>Av. Pueyrredón 2100, Barrio Norte</p>
-                        <p>L a S de 9 a 20hs</p>
-                    </div>
-                </div>
-
-                <div class="card peluqueriaCanina 9 lunesViernes sabado">
-                    <figure>
-                        <img src="Imagenes/Comercios/PeluqueriaCanina.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Mi Perro</h3>
-                        <p>Ambiente Especialmente Preparado para este Fin.</p>
-                        <p><b>Peluquería canina</b></p>
-                        <p>miperro@gmail.com</p>
-                        <p>Tel.: 4512-3218</p>
-                        <p>Av. Pueyrredón 1801, Barrio Norte</p>
-                        <p>L a S de 9 a 20hs</p>
-                    </div>
-                </div>
-
-                <div class="card veterinaria 10 lunesViernes sabado domingo">
-                    <figure>
-                        <img src="Imagenes/Comercios/Tropical.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Tropical</h3>
-                        <p>Clínica Veterinaria de Pequeños Animales.</p>
-                        <p><b>Veterinaria</b></p>
-                        <p>tropical@gmail.com</p>
-                        <p>Tel.: 4641-4758</p>
-                        <p>Esmeralda 100, Microcentro</p>
-                        <p>L a D de 9 a 20hs</p>
-                    </div>
-                </div>
-
-                <div class="card forrajeria 11 domingo">
-                    <figure>
-                        <img src="Imagenes/Comercios/tuMascota.jpg" alt="Foto de comercio">
-                    </figure>
-                    <div class="datos">
-                        <h3>Tu Mascota</h3>
-                        <p>Venta por Mayor y Menor</p>
-                        <p><b>Forrajería</b></p>
-                        <p>tu mascota@gmail.com</p>
-                        <p>Tel.: 3142-4651</p>
-                        <p>Sarmiento 100, San Nicolas</p>
-                        <p>D de 9 a 20hs</p>
-                    </div>
-                </div>
-                
+            <main class="publicaciones" id="info" >
+      
             </main>
-         </div>
 
-    </body>
+            <footer>
+                <p>Copyright © 2020 UNGS - Web diseñada por Grupo 2</p>
+            </footer>
+
+        </div>
+            <div class="cont_ventana">
+                <div class="ventana">
+                    <div class="header">
+                        <button class="cerrar">X</button>
+                    </div>
+                    <div class="contenido">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="cont_info">
+                            <div class="info">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+</body>
 
 </html>
