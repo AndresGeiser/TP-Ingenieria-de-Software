@@ -25,7 +25,7 @@ function bootstrap()
         contenedor.innerHTML += `
         <div class = "alerta" >
           <div class = "${e.status}"> 
-          <h2>  ${e.status + ": " + e.title}  </h2>
+          <h2> <i class="fas fa-exclamation-triangle"></i> ${e.status + ": " + e.title}  </h2>
           </div>
           <div class = "zonas" >
             <p> <b>Zonas</b>:  ${zonasAfectadas} </p>
