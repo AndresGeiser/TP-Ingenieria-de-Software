@@ -19,8 +19,11 @@ function bootstrap()
         //Rescatamos las zonas afectadas por cada alerta registrada
         for(i in e.zones)
         {   
-            zonasAfectadas += e.zones[i] + " ";
+            zonasAfectadas += e.zones[i] + ", ";
         }
+        //Eliminamos la última coma
+        zonasAfectadas = zonasAfectadas.substring(0, zonasAfectadas.length - 2);
+
 
         contenedor.innerHTML += `
         <div class = "alerta" >
