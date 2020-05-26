@@ -175,7 +175,7 @@
 }
 
 .publicaciones .card .datos p {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.4;
 }
 
@@ -225,7 +225,9 @@
 .cont_ventana .ventana .header {
     width: 100%;
     height: 10%;
-    background: black;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
     display: flex;
     justify-content: flex-end;
 }
@@ -276,8 +278,9 @@
 .cont_ventana .ventana .contenido .cont_info .info {
     width: 80%;
     height: 80%;
+    padding: 10px;
     border: 1px solid gray;
     background: white;
-    padding: 10px;
     overflow: auto;
 }
+    
