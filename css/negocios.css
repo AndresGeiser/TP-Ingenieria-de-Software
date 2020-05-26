@@ -292,3 +292,7 @@
     width: 45%;
 }
 
+.cont_ventana .ventana .contenido .cont_info .info a:hover{
+    background:royalblue;
+    color: white;
+}
