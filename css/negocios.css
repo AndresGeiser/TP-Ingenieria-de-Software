@@ -31,8 +31,6 @@
     margin-left: 10%;
 }
 
-
-
 .contenedor header nav a {
     color: white;
     text-decoration: none;
@@ -62,7 +60,6 @@
     color: rgb(36, 228, 19);
 }
 
-
 .contenedor .menu {
     grid-column-start: 1;
     grid-column-end: -1;
@@ -87,9 +84,7 @@
     width: 200px;
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 20px;
-    
-    
+    margin-left: 20px;  
 }
 
 .contenedor aside .filtros {
@@ -104,11 +99,9 @@
 }
 
 .contenedor aside .filtros .reporte,
-.contenedor aside .filtros .edad, 
-.contenedor aside .filtros .raza {
+.contenedor aside .filtros .horariosDeAtencion {
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
-    overflow: hidden;
 }
 
 .contenedor aside .filtros .caja_boton {
@@ -220,9 +213,9 @@
     border: none;
     border-radius: 20px;
     overflow: hidden;
-    background: #FDC830;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FDC830;
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+    background: linear-gradient(to right, #F37335, #FDC830);
     font-family: sans-serif;
     font-size: 13px;
 }

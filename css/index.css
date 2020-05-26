@@ -3,88 +3,99 @@
 	padding: 0;
 }
 
-header {
+.contenedor {
     width: 100%;
-    background: royalblue;
-    overflow: hidden;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    background: #C6FFDD;  
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
 }
 
-header h1 {
+.contenedor header {
+    height: 100px;
+    background: royalblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor header h1 {
     color: aliceblue;
     font-size: 50px;
     font: oblique bold 300% cursive;
-    float: left;
-    line-height: 100px;
     margin-left: 10%;
 }
 
-header nav {
-    float: right;
-    line-height: 100px;
-}
-
-header nav a {
-    color: aliceblue;
+.contenedor header nav a {
+    color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    line-height: normal;
     margin-right: 25px;
     padding: 10px;
     border-radius: 30px;
-}
-
-header nav a:hover {
-    font-size: 22px;
+    font: 110% sans-serif;
 }
 
 .registrarse {
     background: rgb(255, 153, 0);
-    font: 110% sans-serif;
 }
 
 .registrarse:hover {
-    background: rgb(10, 10, 9);
+    background: white;
+    color: rgb(255, 153, 0);
 }
 
 .iniciarSesion{
     background: rgb(36, 228, 19);
-    font: 110% sans-serif;
 }
 
 .iniciarSesion:hover{
-    background: rgb(10, 10, 9);
+    background: white;
+    color: rgb(36, 228, 19);
 }
 
-.menu {
+.contenedor .menu {
     background: brown;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+    display: flex;
+    font-family: sans-serif ;
 }
 
-.menu a {
-    float: left;
-    color: aliceblue;
+.contenedor .menu a {
+    color: white;
     text-decoration: none;
-    font: 100% sans-serif;
     font-size: 20px;
     padding: 10px 50px; 
 }
 
-.menu a:hover {
+.contenedor .menu a:hover {
     background: rgb(207, 82, 82);
 }
 
-
-main {
+.contenedor main {
     width: 90%;
+    height: 100vh;
     margin: auto;
     text-align: center;
 }
 
-main h2 {
+.contenedor main h2 {
     font-size: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.contenedor footer {
+    margin-top: 100px;
+    background: black;
+    color: white;
+    height: 100px;
+    font-family: sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
