@@ -31,15 +31,15 @@ function bootstrap()
           <h2> <i class="fas fa-exclamation-triangle"></i> ${e.status + ": " + e.title}  </h2>
           </div>
           <div class = "zonas" >
-            <p> <b>Zonas</b>:  ${zonasAfectadas} </p>
+            <p> <i class="fas fa-map-marker-alt"> </i> <b>Zonas</b>:  ${zonasAfectadas} </p>
           </div>
           <div class = "datos">
             <p> ${e.description} </p>
           </div> 
           <div class = "fecha">
-            <p> <b>Fecha de emisión</b>: ${e.date} </p>
+            <p> <i class="fas fa-calendar-alt"></i>  <b>Fecha de emisión</b>: ${e.date} </p>
           <div class = "update">
-            <p> <b>Proxima actualización</b>: ${e.update} </p> 
+            <p> <i class="fas fa-clock"></i> <b>Proxima actualización</b>: ${e.update} </p> 
           </div>
         </div>  
          `
