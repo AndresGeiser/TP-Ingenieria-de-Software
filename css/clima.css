@@ -124,6 +124,58 @@ main {
 .clima .proximo_dia h4 {
     background: orange;
     padding: 10px;
+}main {
+    width: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+    background: #C6FFDD;  
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+}
+
+.clima {
+    overflow: hidden;
+    width: 90%;
+    margin: auto; 
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.clima .clima_principal {
+    padding-top: 20px;
+}
+
+.clima .clima_principal .temperatura {
+    color: orange;
+}
+
+.clima .clima_principal .descripcion {
+    color: gray;
+}
+
+.clima .clima_principal p {
+    line-height: 25px;
+}
+
+.clima .proximo_dia {
+    text-align: left;
+    margin: 20px;
+    border: 1px solid orange;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    background: white;
+    overflow: hidden;
+}
+
+.clima .proximo_dia h4 {
+    background: orange;
+    padding: 10px;
+}
+
+.clima .proximo_dia p {
+    padding-left: 10px;
+    line-height: 21px;
 }
 
 .clima .proximo_dia p {
@@ -133,7 +185,6 @@ main {
 
 .alertas {
     width: 90%;
-    height: 200px;
     margin: auto;
     margin-top: 20px;
     text-align: center;

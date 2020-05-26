@@ -14,7 +14,7 @@ $(document).ready(function() {
         //Cargamos los datos del clima del dia
         contenedor.innerHTML =`
         <div class="clima_principal">
-                    <h1>${datos.name}, ${datos.province}</h1><br>
+                    <h1><i class="fas fa-map-marker-alt"></i>  ${datos.name}, ${datos.province}</h1><br>
                     <h2 class="temperatura">${datos.weather.tempDesc}</h2><br>
                     <h3 class="descripcion">${datos.weather.description}</h3><br>
                     <p><b>Humedad:</b> ${datos.weather.humidity}%</p>
