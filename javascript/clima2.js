@@ -27,7 +27,7 @@ $(document).ready(function() {
         //Cargamos los datos del clima de los proximos dias
         const proximosDias = datos.forecast.forecast;
         
-        contenedor.innerHTML += '<br><br><br><h2>Proximos dias</h2>'
+        contenedor.innerHTML += '<br><br><br><h2>Próximos dias</h2>'
 
         for (const dia in proximosDias) {
 
