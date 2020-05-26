@@ -1,6 +1,6 @@
 function bootstrap()
 {
-    
+
     // Se hace el fetch a tu url
     fetch('https://ws.smn.gob.ar/alerts/type/AL')
     .then(function(response) {
@@ -12,12 +12,14 @@ function bootstrap()
     const contenedor = document.querySelector('#alertas');
 
     //Para cada alerta se agregan los datos a clima.html
-    for(e in myJson){
-        contenedor.innerHTML += '<p>'+ "Titulo: " + myJson[e].title + '</p>';
-        contenedor.innerHTML += '<p>'+ "Fecha: " + myJson[e].date + '</p>';
-        contenedor.innerHTML += '<p>'+ "Hora: " + myJson[e].hour + '</p>';
-        contenedor.innerHTML += '<p>'+ "Descripción: " + myJson[e].description + '</p>';
-        contenedor.innerHTML += '<p>'+ "Proxima actualización: " + myJson[e].update + '</p>' + '<br>';
+    for(e of myJson){
+        contenedor.innerHTML += `
+          <p> Titulo: ${e.title}  </p>
+          <p> Fecha: ${e.date} </p>
+          <p> Hora: ${e.hour}  </p>
+          <p> Descripción: ${e.description} </p>
+          <p> Proxima actualización: ${e.update} </p>  <br>
+         `
     }
 
     });
