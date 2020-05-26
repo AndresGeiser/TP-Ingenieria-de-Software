@@ -23,17 +23,21 @@ function bootstrap()
         }
 
         contenedor.innerHTML += `
-        <div id = ${e.idAlert}>
-          <h3>  ${e.status + ": " + e.title}  </h3>
-          <div id = "zonas">
-            <p> ${zonasAfectadas} </p>
+        <div class = "alerta" >
+          <div class = "${e.status}"> 
+          <h2>  ${e.status + ": " + e.title}  </h2>
           </div>
-          <div id = "datos">
-            <p> Fecha: ${e.date} </p>
-            <p> Hora: ${e.hour}  </p>
-            <p> Descripción: ${e.description} </p>
-            <p> Proxima actualización: ${e.update} </p>  <br>
-           </div> 
+          <div class = "zonas" >
+            <p> <b>Zonas</b>:  ${zonasAfectadas} </p>
+          </div>
+          <div class = "datos">
+            <p> ${e.description} </p>
+          </div> 
+          <div class = "fecha">
+            <p> <b>Fecha de emisión</b>: ${e.date} </p>
+          <div class = "update">
+            <p> <b>Proxima actualización</b>: ${e.update} </p> 
+          </div>
         </div>  
          `
     }
