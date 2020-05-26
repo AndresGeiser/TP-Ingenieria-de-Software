@@ -179,7 +179,7 @@
 }
 
 .contenedor footer {
-    margin-top: 100px;
+    margin-top: 150px;
     grid-column-start: 1;
     grid-column-end: -1;
     background: black;
