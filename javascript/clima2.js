@@ -38,6 +38,7 @@ $(document).ready(function() {
                         <p><b>Max:</b> ${proximosDias[dia].temp_max}ºC</p>
                         <p><b>Por la mañana:</b> ${proximosDias[dia].morning.description}</p>
                         <p><b>Por la noche:</b> ${proximosDias[dia].afternoon.description}</p>
+
             </div>
             `
             console.log(proximosDias[dia].date);

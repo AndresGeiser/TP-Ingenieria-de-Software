@@ -121,6 +121,8 @@ function mostrarDetalles(seleccionado) {
             <p><b>Correo Electrónico:</b> ${aviso.email}.</p><br>
             <p><b>Teléfono de contacto:</b> ${aviso.telefono}.</p><br>
             <p><b>Días y Horarios de Atención:</b> ${aviso.horario}.</p><br>
+            <a class="verMapa" href = "/mapa.html"><i class="fas fa-map-marked-alt"></i>Ver en un mapa</a>
+
             `;
              
         }
