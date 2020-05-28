@@ -532,5 +532,163 @@
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion menor_a_uno pit_bull",		
 		"telefono":"54(2590)017-23-02"	
-}			
+
+
+
+},
+{				
+	"id":37,		
+	"fecha":"12/06/2020",		
+	"nombre":"Pepe",		
+	"estado":"Perdido",		
+	"edad":"2 años",		
+	"raza":"Loro",		
+	"foto":"Imagenes/Avisos/loro1.jpg",		
+	"descripcion":"Sin descripción",
+	"suceso":{
+		"fecha":"12/06/2020",
+		"direccion":"Pte. Peron 2132, San Miguel"
+	},	
+	"tipo":"card perdido uno_a_cinco loro",		
+	"telefono":"54(2590)017-23-02"	
+},
+{				
+	"id":38,		
+	"fecha":"05/01/2020",		
+	"nombre":"Gallardo",		
+	"estado":"Perdido",		
+	"edad":"5 años",		
+	"raza":"Persa",		
+	"foto":"Imagenes/Avisos/persa1.jpg",		
+	"descripcion":"Sin descripción",
+	"suceso":{
+		"fecha":"04/01/2020",
+		"direccion":"Miguel Cané 350, José C. Paz"
+	},	
+	"tipo":"card perdido uno_a_cinco persa",		
+	"telefono":"54(977)636-56-17"	
+},				
+{				
+		"id":39,		
+		"fecha":"17/02/2020",		
+		"nombre":"Plata",		
+		"estado":"Perdido",		
+		"edad":"6 años",		
+		"raza":"Persa",		
+		"foto":"Imagenes/Avisos/persa2.jpg",		
+		"descripcion":"Sin descripción",		
+		"suceso":{
+			"fecha":"16/02/2020",
+			"direccion":"Pedro de mendoza 1525, José C. Paz"
+		},			
+		"tipo":"card perdido seis_a_diez persa",		
+		"telefono":"54(644)202-21-94"	
+},
+{				
+	"id":40,		
+	"fecha":"08/02/2020",		
+	"nombre":"Los 4 Hermanos",		
+	"estado":"En adopción",		
+	"edad":"3 meses",		
+	"raza":"Persa",		
+	"foto":"Imagenes/Avisos/persa3.jpg",		
+	"descripcion":"Tenemos 4 gatitos Persa de 3 meses en adoción. Interesados pueden contactarnos. Se entregan vacunados.",
+	"cuidados":"Sin descripción",
+	"tipo":"card adopcion menor_a_uno persa",		
+	"telefono":"54(018)291-17-85"	
+},
+{				
+	"id":41,		
+	"fecha":"20/05/2020",		
+	"nombre":"Jesus",		
+	"estado":"Encontrado",		
+	"edad":"3 años",		
+	"raza":"Siames",		
+	"foto":"Imagenes/Avisos/siames1.jpg",		
+	"descripcion":"Sin descripción",		
+	"suceso":{
+		"fecha":"16/05/2020",
+		"direccion":"Arias 3521, José C. Paz"
+	},			
+	"tipo":"card encontrado uno_a_cinco siames",		
+	"telefono":"54(219)264-90-80"	
+},
+{				
+	"id":42,		
+	"fecha":"20/01/2020",		
+	"nombre":"Jesus",		
+	"estado":"Encontrado",		
+	"edad":"7 años",		
+	"raza":"Siames",		
+	"foto":"Imagenes/Avisos/siames2.jpg",		
+	"descripcion":"Sin descripción",		
+	"suceso":{
+		"fecha":"8/01/2020",
+		"direccion":"Pte. Peron 2329, José C. Paz"
+	},			
+	"tipo":"card encontrado seis_a_diez siames",		
+	"telefono":"54(826)206-22-59"	
+},
+{				
+	"id":43,		
+	"fecha":"21/05/2020",		
+	"nombre":"A definir",		
+	"estado":"En adopción",		
+	"edad":"2 meses",		
+	"raza":"Siames",		
+	"foto":"Imagenes/Avisos/siames3.jpg",		
+	"descripcion":"Tenemos 3 gatitos siameses en adopción. Solo se permite la adopción si lo hacen si separar a la madre de sus hijos. ",		
+	"cuidados":"Sin descripción",
+	"tipo":"card adopcion menor_a_uno siames",			
+	"telefono":"54(17)306-37-16"	
+},
+{				
+	"id":44,		
+	"fecha":"19/03/2020",		
+	"nombre":"Melvin",		
+	"estado":"Perdido",		
+	"edad":"9 años",		
+	"raza":"Tortuga de tierra",		
+	"foto":"Imagenes/Avisos/tortuga1.jpg",		
+	"descripcion":"Sin descripción",		
+	"suceso":{
+		"fecha":"19/03/2020",
+		"direccion":"Jorge Newbery 221, José C. Paz"
+	},			
+	"tipo":"card perdido seis_a_diez tortuga",		
+	"telefono":"54(416)015-22-51"	
+},
+{				
+	"id":45,		
+	"fecha":"09/12/2019",		
+	"nombre":"Ramiro",		
+	"estado":"Encontrado",		
+	"edad":"10 años",		
+	"raza":"Van Turco",		
+	"foto":"Imagenes/Avisos/vanturco1.jpg",		
+	"descripcion":"Lo encontramos hace tiempo, buscamos a su dueño",		
+	"suceso":{
+		"fecha":"08/11/2019",
+		"direccion":"Tres Sargentos 2199, José C. Paz"
+	},			
+	"tipo":"card encontrado seis_a_diez vanturco",		
+	"telefono":"54(254)456-38-34"	
+},
+{				
+	"id":46,		
+	"fecha":"01/04/2020",		
+	"nombre":"Juanjo",		
+	"estado":"Perdido",		
+	"edad":"2 años",		
+	"raza":"Van Turco",		
+	"foto":"Imagenes/Avisos/vanturco2.jpg",		
+	"descripcion":"Sin descripción",		
+	"suceso":{
+		"fecha":"28/03/2020",
+		"direccion":"Gral. Martin Rodriguez 4298, José C. Paz"
+	},			
+	"tipo":"card perdido uno_a_cinco vanturco",		
+	"telefono":"54(40)652-00-37"	
+}
+
 ]				
