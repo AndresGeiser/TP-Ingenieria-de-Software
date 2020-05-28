@@ -1,4 +1,4 @@
-function bootstrap()
+function cargarMapa()
 {
     let map = L.map('mapid')
 
@@ -7,8 +7,6 @@ function bootstrap()
         attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
     
-
-
     //Rescatamos el archivo geoJson del que vamos a obtener los datos
     let geojson_url = "https://raw.githubusercontent.com/AndresGeiser/TP-Ingenieria-de-Software/master/javascript/localizaciones.geojson"
     //Tomo los datos de manera asincrónica utilizando promesas y los agrego al mapa
@@ -31,9 +29,6 @@ function bootstrap()
             }).addTo(map)
             //Centro el mapa sobre los datos
             map.fitBounds(geoJsonlayer.getBounds())
-
         }
     )
-
-
 }

@@ -1,15 +1,16 @@
 $(document).ready(function() {
+    
     $(".cerrar").click(cerrarVentana); 
     
     $(".btn_filtrar").click(filtrar);  
 
-    traerDatos();
+    cargarDatos();
+    cargarMapa();
 });
 
 var datos;
-function traerDatos(){
 
-    //console.log('dentro de la funcion');
+function cargarDatos() {
 
     const xhttp = new XMLHttpRequest();
 
@@ -22,14 +23,12 @@ function traerDatos(){
         if(this.readyState == 4 && this.status ==200){
             
             datos = JSON.parse(this.responseText);
-           // console.log(datos);
+           
             let info = document.querySelector('#info');
 
-            info.innerHTML = '';
-            
+            info.innerHTML = '';  
 
-            for (let item of datos){
-            //    console.log(item.raza);
+            for (let item of datos) {
 
                 info.innerHTML +=` 
                 <div class="${item.tipo}" id="${item.id}" onclick="mostrarDetalles(this)">
@@ -38,15 +37,13 @@ function traerDatos(){
                 </figure>
                 <div class="datos">
                     <h3>${item.nombre}</h3>
-                    <h4><b>${item.negocio}</b></h4>
+                    <h4>${item.negocio}</h4>
                     <p>${item.horario}</p>
                 
                 </div>
                 </div>
-                `         
-
+                `    
             }
-
         }
     }
 }
@@ -59,7 +56,7 @@ function filtrar() {
     //Recorremos los avisos y nos fijamos si cumple con los filtros
     avisos.forEach(aviso => {
         if(cumpleConFiltros(aviso)) {
-            aviso.style.display = 'inline';
+            aviso.style.display = 'inline'; 
         } else {
             aviso.style.display = 'none'; //Ocultamos
         }
@@ -105,9 +102,9 @@ function cumpleConHorario(aviso) {
 }
 
 function mostrarDetalles(seleccionado) {
+
     var foto =  document.querySelector('.cont_ventana .ventana figure img');
     var info =  document.querySelector('.cont_ventana .ventana .info');
-    
 
     datos.forEach(aviso => {
         if(aviso.id == seleccionado.id) {
@@ -128,8 +125,7 @@ function mostrarDetalles(seleccionado) {
         }
      });
  
-    document.querySelector('.cont_ventana').style.visibility = "visible";
-    
+    document.querySelector('.cont_ventana').style.visibility = "visible";   
 }
 
 function cerrarVentana() {

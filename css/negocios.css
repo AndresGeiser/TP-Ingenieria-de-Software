@@ -7,9 +7,9 @@
     width: 100%;
     display: grid;
     column-gap: 20px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-    background: #C6FFDD;  /* fallback for old browsers */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    background: #C6FFDD;
     background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
     background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
 }
@@ -81,10 +81,12 @@
 }
  
 .contenedor aside {
-    width: 200px;
+    width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 20px;  
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .contenedor aside .filtros {
@@ -92,19 +94,19 @@
     border: 1px solid gray;
     font: 100% sans-serif;
     background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .contenedor aside .filtros div {
-    margin: 20px;
-}
-
-.contenedor aside .filtros .reporte,
-.contenedor aside .filtros .horariosDeAtencion {
-    border-bottom: 1px solid gray;
-    padding-bottom: 20px;
+    margin: 10px;
+    font-size: small;
 }
 
 .contenedor aside .filtros .caja_boton {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -129,14 +131,26 @@
     margin-bottom: 10px
 }
 
+.contenedor #mapid {
+    margin: 20px;
+    border: 1px solid black;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
 .contenedor .publicaciones {
-    margin-top: 20px;
-    margin-right: 20px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    width: 100%;
+    height: 1000px;
+    margin-left: 20px;  
+    border-radius: 30px;
+    grid-row-start: 4;
+    grid-row-end: 5;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around; 
+    overflow: auto;
 }
 
 .contenedor .publicaciones .card {
@@ -175,11 +189,11 @@
 
 .publicaciones .card .datos p {
     font-size: 15px;
-    line-height: 1.4;
+    line-height: 3;
 }
 
 .contenedor footer {
-    margin-top: 150px;
+    margin-top: 100px;
     grid-column-start: 1;
     grid-column-end: -1;
     background: black;
