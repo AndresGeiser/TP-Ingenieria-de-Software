@@ -76,8 +76,6 @@ header nav a:hover {
     background: rgb(207, 82, 82);
 }
 
-
-
 main {
     width: 100%;
     overflow: hidden;
@@ -150,77 +148,82 @@ main {
     width: 90%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 200px;
+    font: 110% sans-serif;
     text-align: center;
 }
 
-.alertas .alerta{
+.alertas #api {
     margin-top: 20px;
-    margin-bottom: 10px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.alertas .obtener {
+    margin-top: 20px;
+    padding: 4px;
+    font-size: 14px;
+    background: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.alertas .obtener:hover {
+    background: grey;
+}
+
+.alertas .alerta {
+    margin : 20px;
+    background-color: white;
     border: 2px solid gray;
     border-radius: 10px;
-    align-content: center;
-    background-color: white;
-    margin : 20px;
-    
-    
+    overflow: hidden;
 }
 
-.alertas .alerta .Cese{
-    font: 100% sans-serif;
+.alertas .alerta .Cese {
     background-color: rgba(72, 209, 219, 0.603);
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
     border-bottom: 2px solid gray;
     color: rgba(36, 36, 36, 0.993);
 }
 
-.alertas .alerta .Aviso{
-    font: 100% sans-serif;
+.alertas .alerta .Aviso {
     background-color: rgba(238, 14, 14, 0.76);
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
     border-bottom: 2px solid gray;
     color: rgba(36, 36, 36, 0.993);
 }
 
-.alertas .alerta .zonas p{
-    padding-top: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font: 110% sans-serif;
+.alertas .alerta h2 {
+    padding: 4px;
+}
+
+.alertas .alerta .zonas p {
+    padding: 7px;
     color: rgba(77, 76, 76, 0.993);
     text-align: justify;
     border-bottom: 2px solid gray;
 }
 
-.alertas .alerta .datos p{
-    padding-left: 10px;
-    padding-right: 10px;
-    font: 110% sans-serif;
+.alertas .alerta .datos p {
+    padding: 7px;
     text-align: justify;
     align-content: center;
 }
 
-.alertas .alerta .fecha p{
-    padding-left: 10px;
-    padding-right: 10px;
-    font: 110% sans-serif;
+.alertas .alerta .fecha p {
+    padding: 7px;
     color: rgba(77, 76, 76, 0.993);
     text-align: justify;
     align-content: center;
 }
 
-.alertas .alerta .update{
-    font: 100% sans-serif;
+.alertas .alerta .update {
     text-align: justify;
     border-top: 2px solid gray;
     color: rgba(77, 76, 76, 0.993);
 }
 
-main footer {
-    margin-top: 100px;
-    grid-column-start: 1;
-    grid-column-end: -1;
+footer {
     background: black;
     color: white;
     height: 100px;
