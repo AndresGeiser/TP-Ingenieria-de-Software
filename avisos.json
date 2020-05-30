@@ -13,7 +13,8 @@
             "direccion":"José María Paz 1829 San Miguel"				
 		},		
 		"tipo":"card encontrado seis_a_diez akita",		
-		"telefono":"54(4004)720-93-33"
+		"telefono":"54(4004)720-93-33",
+		"email":"alicia.perez@gmail.com"
 },				
 {				
 		"id":2,		
@@ -26,7 +27,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion menor_a_uno beagle",		
-		"telefono":"54(53)820-19-15"
+		"telefono":"54(53)820-19-15",
+		"email":"juan.lopez@gmail.com"
 },				
 {				
 		"id":3,		
@@ -39,7 +41,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion menor_a_uno dobermann",		
-		"telefono":"54(32)976-81-78"
+		"telefono":"54(32)976-81-78",
+		"email":"matiaslarenga@gmail.com"
 },				
 {				
 		"id":4,		
@@ -55,7 +58,8 @@
             "direccion":"Jujuy 2419 Bella Vista"				
         },				
 		"tipo":"card encontrado seis_a_diez dalmata",		
-		"telefono":"54(357)516-92-22"
+		"telefono":"54(357)516-92-22",
+		"email":"lucaspratto@riverclub.com"
 },				
 {				
 		"id":5,		
@@ -68,7 +72,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion menor_a_uno chow_chow",		
-		"telefono":"54(14)244-86-80"
+		"telefono":"54(14)244-86-80",
+		"email":"juliogalarza@hotmail.com"
 },				
 {				
 		"id":6,		
@@ -84,7 +89,8 @@
             "direccion":"Atuel 899 Hurlingham"				
         },				
 		"tipo":"card perdido seis_a_diez boxer",		
-		"telefono":"54(466)850-82-90"
+		"telefono":"54(466)850-82-90",
+		"email":"mariadehurlingham@outlook.com"
 },				
 {				
 		"id":7,		
@@ -100,7 +106,8 @@
             "direccion":"Libertad 4142 José C. Paz"				
         },				
 		"tipo":"card perdido seis_a_diez pit_bull",		
-		"telefono":"54(31)875-26-49"
+		"telefono":"54(31)875-26-49",
+		"email":"martinfarias@gmail.com"
 },				
 {				
 		"id":8,		
@@ -116,7 +123,8 @@
             "direccion":"Rivadavia 2544 Los Polvorines"				
         },				
 		"tipo":"card perdido seis_a_diez bull_terrier",		
-		"telefono":"54(791)571-91-76"
+		"telefono":"54(791)571-91-76",
+		"email":"alejandrogalli@gmail.com"
 },				
 {				
 		"id":9,		
@@ -132,7 +140,8 @@
             "direccion":"Senillosa 3992 Los Polvorines"				
         },				
 		"tipo":"card encontrado mas_de_diez cane_corso",		
-		"telefono":"54(615)345-58-67"
+		"telefono":"54(615)345-58-67",
+		"email":"alberto.pinelli@outlook.com"
 },				
 {				
 		"id":10,		
@@ -145,7 +154,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion uno_a_cinco galgo",		
-		"telefono":"54(438)777-47-86"
+		"telefono":"54(438)777-47-86",
+		"email":"juliasuarez@hotmail.com"
 },				
 {				
 		"id":11,		
@@ -161,7 +171,8 @@
             "direccion":"Monteagudo 2488 San Miguel"				
         },				
 		"tipo":"card perdido seis_a_diez caniche",		
-		"telefono":"54(68)869-22-07"
+		"telefono":"54(68)869-22-07",
+		"email":"gustavoperez@gmail.com"
 },				
 {				
 		"id":12,		
@@ -174,7 +185,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card perdido mas_de_diez beagle",		
-		"telefono":"54(3239)976-40-55"
+		"telefono":"54(3239)976-40-55",
+		"email":"marcelotinelli@gmail.com"
 },				
 {				
 		"id":13,		
@@ -190,7 +202,9 @@
             "direccion":"4 de Marzo 1299 Grand Bourg"				
         },				
 		"tipo":"card perdido uno_a_cinco akita",		
-		"telefono":"54(3320)939-76-74"
+		"telefono":"54(3320)939-76-74",
+		"email":"lucas.gomez13@gmail.com"
+
 },				
 {				
 		"id":14,		
@@ -206,7 +220,8 @@
             "direccion":"Dr. Mariano Moreno 1212 Bella Vista"				
         },				
 		"tipo":"card perdido uno_a_cinco chihuahua",		
-		"telefono":"54(066)400-79-17"
+		"telefono":"54(066)400-79-17",
+		"email":"maximiliano.insua@gmail.com"
 },				
 {				
 		"id":15,		
@@ -222,7 +237,8 @@
             "direccion":"Río Colorado 1599 Bella Vista"				
         },				
 		"tipo":"card perdido seis_a_diez chow_chow",		
-		"telefono":"54(827)856-17-73"
+		"telefono":"54(827)856-17-73",
+		"email":"car_detail_matias@gmail.com"
 },				
 {				
 		"id":16,		
@@ -235,7 +251,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion menor_a_uno akita",		
-		"telefono":"54(3692)585-46-26"
+		"telefono":"54(3692)585-46-26",
+		"email":"alicia.marin@outook.com"
 },				
 {				
 		"id":17,		
@@ -248,7 +265,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card encontrado uno_a_cinco dalmata",		
-		"telefono":"54(456)552-59-47"
+		"telefono":"54(456)552-59-47",
+		"email":"albertojcp@gmail.com"
 },				
 {				
 		"id":18,		
@@ -264,7 +282,8 @@
             "direccion":"Salerno 1900 San Miguel"				
         },				
 		"tipo":"card perdido mas_de_diez san_bernardo",		
-		"telefono":"54(8098)828-85-24"
+		"telefono":"54(8098)828-85-24",
+		"email":"marcelolopez22@yahoo.com.ar"
 },				
 {				
 		"id":19,		
@@ -280,7 +299,8 @@
             "direccion":"Calle Blasco Ibañez 1829 San Miguel"				
         },				
 		"tipo":"card perdido seis_a_diez dobermann",		
-		"telefono":"54(880)545-01-86"
+		"telefono":"54(880)545-01-86",
+		"email":"ratonperez@gmail.com"
 },				
 {				
 		"id":20,		
@@ -293,7 +313,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion seis_a_diez dogo_argentino",		
-		"telefono":"54(1265)540-53-23"
+		"telefono":"54(1265)540-53-23",
+		"email":"mundofutbol@gmail.com"
 },				
 {				
 		"id":21,		
@@ -309,7 +330,8 @@
             "direccion":"José Hernández 3700 Tortuguitas"				
         },				
 		"tipo":"card encontrado uno_a_cinco caniche",		
-		"telefono":"54(1265)540-53-23"
+		"telefono":"54(1265)540-53-23",
+		"email":"compugarden@gmail.com"
 },				
 {				
 		"id":22,		
@@ -325,7 +347,8 @@
             "direccion":"Pasco 1199 Grand Bourg"				
         },				
 		"tipo":"card encontrado seis_a_diez dogo_argentino",		
-		"telefono":"54(120)652-45-30"
+		"telefono":"54(120)652-45-30",
+		"email":"braiancasal13@outlook.com"
 },				
 {				
 		"id":23,		
@@ -341,7 +364,8 @@
             "direccion":"Lucio Melenez 1299 Don Torcuato"				
         },				
 		"tipo":"card perdido seis_a_diez dogo_de_burdeos",		
-		"telefono":"54(91)878-90-55"
+		"telefono":"54(91)878-90-55",
+		"email":"marinodannet@gmail.com"
 },				
 {				
 		"id":24,		
@@ -357,7 +381,8 @@
             "direccion":"Callao 1700 San Miguel"				
         },				
 		"tipo":"card encontrado seis_a_diez galgo",		
-		"telefono":"54(09)633-08-42"
+		"telefono":"54(09)633-08-42",
+		"email":"veterinarialamadrid@hotmail.com"
 },				
 {				
 		"id":25,		
@@ -373,7 +398,8 @@
             "direccion":"Joaquín V. González 1988 José C. Paz"				
         },				
 		"tipo":"card perdido uno_a_cinco gran_danes",		
-		"telefono":"54(8841)053-04-52"
+		"telefono":"54(8841)053-04-52",
+		"email":"sole15juarez@gmail.com"
 },				
 {				
 		"id":26,		
@@ -386,7 +412,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion menor_a_uno boxer",		
-		"telefono":"54(31)367-47-75"
+		"telefono":"54(31)367-47-75",
+		"email":"ocampo.kevin@gmail.com"
 },				
 {				
 		"id":27,		
@@ -399,7 +426,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion menor_a_uno rottweiler",		
-		"telefono":"54(9459)197-05-22"
+		"telefono":"54(9459)197-05-22",
+		"email":"lucasperotti@gmail.com"
 },				
 {				
 		"id":28,		
@@ -412,7 +440,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion mas_de_diez gran_danes",		
-		"telefono":"54(328)964-37-71"
+		"telefono":"54(328)964-37-71",
+		"email":"marianoguzman@gmail.com"
 },				
 {				
 		"id":29,		
@@ -428,7 +457,8 @@
             "direccion":"Carupayti 2348 José C. Paz"				
         },				
 		"tipo":"card encontrado uno_a_cinco pit_bull",		
-		"telefono":"54(076)268-71-78"
+		"telefono":"54(076)268-71-78",
+		"email":"la.abuela.elsa@gmail.com"
 },				
 {				
 		"id":30,		
@@ -444,7 +474,8 @@
             "direccion":"Mármol 4000 Bella Vista"				
         },				
 		"tipo":"card perdido seis_a_diez rottweiler",		
-		"telefono":"54(75)376-71-85"
+		"telefono":"54(75)376-71-85",
+		"email":"patriciarocha@gmail.com"
 },				
 {				
 		"id":31,		
@@ -460,7 +491,8 @@
             "direccion":"Zuviría 333 Muñiz"				
         },				
 		"tipo":"card encontrado seis_a_diez sabueso",		
-		"telefono":"54(8211)933-00-98"
+		"telefono":"54(8211)933-00-98",
+		"email":"patogutierrez@gmail.com"
 },				
 {				
 		"id":32,		
@@ -476,7 +508,8 @@
             "direccion":"Tres Sargentos 1766 José C. Paz"				
         },				
 		"tipo":"card perdido uno_a_cinco beagle",		
-		"telefono":"54(560)399-14-34"
+		"telefono":"54(560)399-14-34",
+		"email":"martinmuñoz@gmail.com"
 },				
 {				
 		"id":33,		
@@ -489,7 +522,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion seis_a_diez san_bernardo",		
-		"telefono":"54(92)870-69-28"
+		"telefono":"54(92)870-69-28",
+		"email":"fariasflorencia@gmail.com"
 },				
 {				
 		"id":34,		
@@ -505,7 +539,8 @@
             "direccion":"Chubut 1212 Bella Vista"				
         },				
 		"tipo":"card encontrado mas_de_diez bull_terrier",		
-		"telefono":"54(1131)295-86-65"
+		"telefono":"54(1131)295-86-65",
+		"email":"lucasfortnite@gmail.com"
 },				
 {				
 		"id":35,		
@@ -518,7 +553,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion uno_a_cinco akita",		
-		"telefono":"54(5410)527-76-55"
+		"telefono":"54(5410)527-76-55",
+		"email":"venta.gamer@gmail.com"
 },				
 {				
 		"id":36,		
@@ -531,7 +567,8 @@
 		"descripcion":"Sin descripción",		
 		"cuidados": "Sin información",		
 		"tipo":"card adopcion menor_a_uno pit_bull",		
-		"telefono":"54(2590)017-23-02"	
+		"telefono":"54(2590)017-23-02",
+		"email":"julienta.diaz@gmail.com"
 
 
 
@@ -550,7 +587,8 @@
 		"direccion":"Pte. Peron 2132, San Miguel"
 	},	
 	"tipo":"card perdido uno_a_cinco loro",		
-	"telefono":"54(2590)017-23-02"	
+	"telefono":"54(2590)017-23-02",
+	"email":"carlalopez@gmail.com"	
 },
 {				
 	"id":38,		
@@ -566,7 +604,8 @@
 		"direccion":"Miguel Cané 350, José C. Paz"
 	},	
 	"tipo":"card perdido uno_a_cinco persa",		
-	"telefono":"54(977)636-56-17"	
+	"telefono":"54(977)636-56-17",
+	"email":"luisuarez@gmail.com"
 },				
 {				
 		"id":39,		
@@ -582,7 +621,8 @@
 			"direccion":"Pedro de mendoza 1525, José C. Paz"
 		},			
 		"tipo":"card perdido seis_a_diez persa",		
-		"telefono":"54(644)202-21-94"	
+		"telefono":"54(644)202-21-94"	,
+		"email":"betoacosta@gmail.com"
 },
 {				
 	"id":40,		
@@ -595,7 +635,8 @@
 	"descripcion":"Tenemos 4 gatitos Persa de 3 meses en adoción. Interesados pueden contactarnos. Se entregan vacunados.",
 	"cuidados":"Sin descripción",
 	"tipo":"card adopcion menor_a_uno persa",		
-	"telefono":"54(018)291-17-85"	
+	"telefono":"54(018)291-17-85",
+	"email":"romina-romina@gmail.com"	
 },
 {				
 	"id":41,		
@@ -611,7 +652,9 @@
 		"direccion":"Arias 3521, José C. Paz"
 	},			
 	"tipo":"card encontrado uno_a_cinco siames",		
-	"telefono":"54(219)264-90-80"	
+	"telefono":"54(219)264-90-80",
+	"email":"raulbaez@gmail.com"
+
 },
 {				
 	"id":42,		
@@ -627,7 +670,8 @@
 		"direccion":"Pte. Peron 2329, José C. Paz"
 	},			
 	"tipo":"card encontrado seis_a_diez siames",		
-	"telefono":"54(826)206-22-59"	
+	"telefono":"54(826)206-22-59",
+	"email":"armando_paredes@gmail.com"	
 },
 {				
 	"id":43,		
@@ -640,7 +684,8 @@
 	"descripcion":"Tenemos 3 gatitos siameses en adopción. Solo se permite la adopción si lo hacen si separar a la madre de sus hijos. ",		
 	"cuidados":"Sin descripción",
 	"tipo":"card adopcion menor_a_uno siames",			
-	"telefono":"54(17)306-37-16"	
+	"telefono":"54(17)306-37-16",
+	"email":"esteban_quito@gmail.com"	
 },
 {				
 	"id":44,		
@@ -656,7 +701,9 @@
 		"direccion":"Jorge Newbery 221, José C. Paz"
 	},			
 	"tipo":"card perdido seis_a_diez tortuga",		
-	"telefono":"54(416)015-22-51"	
+	"telefono":"54(416)015-22-51",
+	"email":"robertitojcpaz@outlook.com"
+
 },
 {				
 	"id":45,		
@@ -672,7 +719,8 @@
 		"direccion":"Tres Sargentos 2199, José C. Paz"
 	},			
 	"tipo":"card encontrado seis_a_diez vanturco",		
-	"telefono":"54(254)456-38-34"	
+	"telefono":"54(254)456-38-34",	
+	"email":"juanesquel@gmail.com"
 },
 {				
 	"id":46,		
@@ -688,7 +736,8 @@
 		"direccion":"Gral. Martin Rodriguez 4298, José C. Paz"
 	},			
 	"tipo":"card perdido uno_a_cinco vanturco",		
-	"telefono":"54(40)652-00-37"	
+	"telefono":"54(40)652-00-37",
+	"email":"graficajcp@gmail.com"	
 }
 
 ]				

@@ -141,6 +141,7 @@ function mostrarDetalles(seleccionado) {
                 <p><b>Raza:</b> ${aviso.raza}.</p><br>
                 <p><b>Cuidados:</b> ${aviso.cuidados}.</p><br>
                 <p><b>Teléfono de contacto:</b> ${aviso.telefono}.</p><br>
+                <p><b>Correo Electrónico:</b> ${aviso.email}</p><br>
                 `;
             } else {
                 info.innerHTML = `
@@ -152,6 +153,7 @@ function mostrarDetalles(seleccionado) {
                 <p><b>Suceso:</b> Ocurrio el ${aviso.suceso.fecha} en ${aviso.suceso.direccion}.</p><br>
                 <p><b>Descripción:</b> ${aviso.descripcion}.</p><br>
                 <p><b>Teléfono de contacto:</b> ${aviso.telefono}.</p><br>
+                <p><b>Correo Electrónico:</b> ${aviso.email}</p><br>
                 `;
             }
        }
