@@ -1,55 +1,45 @@
+var negocios;
+
 $(document).ready(function() {
     
     $(".cerrar").click(cerrarVentana); 
     
     $(".btn_filtrar").click(filtrar);  
 
-    cargarDatos();
-    cargarMapa();
+    fetch("./negocios.json")
+        .then(function(res) {
+            return res.json();
+        })
+        .then(function(datos) {
+            negocios = datos;
+            cargarNegocios(datos);
+            cargarUbicaciones(datos);
+        })
 });
 
-var datos;
+function cargarNegocios(datos) {
+    
+    for (let item of datos) {
 
-function cargarDatos() {
-
-    const xhttp = new XMLHttpRequest();
-
-    xhttp.open('GET', 'negocios.json', true);
-
-    xhttp.send();
-
-    xhttp.onreadystatechange = function(){
-
-        if(this.readyState == 4 && this.status ==200){
-            
-            datos = JSON.parse(this.responseText);
-           
-            let info = document.querySelector('#info');
-
-            info.innerHTML = '';  
-
-            for (let item of datos) {
-
-                info.innerHTML +=` 
-                <div class="${item.tipo}" id="${item.id}" onclick="mostrarDetalles(this)">
-                <figure>
-                    <img src="${item.foto}" alt="Foto de perro">
-                </figure>
-                <div class="datos">
-                    <h3>${item.nombre}</h3>
-                    <h4>${item.negocio}</h4>
-                    <p>${item.horario}</p>
-                
-                </div>
-                </div>
-                `    
-            }
-        }
-    }
+        info.innerHTML +=` 
+        <div class="${item.tipo}" id="${item.id}" onclick="centrarMapa(this)">
+        <figure>
+            <img src="${item.foto}" alt="Foto de perro">
+        </figure>
+        <div class="datos">
+            <h3>${item.nombre}</h3>
+            <h4>${item.negocio}</h4>
+            <p>${item.horario}</p>
+        </div>
+        <div>
+            <button onclick="mostrarDetalles(this)">Ver mas</button>
+        </div>
+        </div>
+        `    
+    }  
 }
 
-function filtrar() {
-        
+function filtrar() {    
     //Obtenemos todos los avisos (obtenemos todos los elementos con clase .card)
     var avisos = document.querySelectorAll('.card')
 
@@ -106,22 +96,22 @@ function mostrarDetalles(seleccionado) {
     var foto =  document.querySelector('.cont_ventana .ventana figure img');
     var info =  document.querySelector('.cont_ventana .ventana .info');
 
-    datos.forEach(aviso => {
-        if(aviso.id == seleccionado.id) {
-        
-            foto.src = aviso.foto;
-            info.innerHTML = `
-            <p><b>Nombre de Negocio:</b> ${aviso.nombre}.</p><br>
-            <p><b>Tipo:</b> ${aviso.negocio}.</p><br>
-            <p><b>Descripción:</b> ${aviso.descripcion}.</p><br>
-            <p><b>Direccion:</b> ${aviso.direccion}.</p><br>
-            <p><b>Correo Electrónico:</b> ${aviso.email}.</p><br>
-            <p><b>Teléfono de contacto:</b> ${aviso.telefono}.</p><br>
-            <p><b>Días y Horarios de Atención:</b> ${aviso.horario}.</p><br>
-            <a class="verMapa" href = "/mapa.html"><i class="fas fa-map-marked-alt"></i>Ver en un mapa</a>
+    negocios.forEach(negocio => {
 
+        var aviso = seleccionado.parentElement.parentElement; //Nos devuelve el elemento que contiene al aviso 
+
+        if(negocio.id == aviso.id) {
+        
+            foto.src = negocio.foto;
+            info.innerHTML = `
+            <p><b>Nombre de Negocio:</b> ${negocio.nombre}.</p><br>
+            <p><b>Tipo:</b> ${negocio.negocio}.</p><br>
+            <p><b>Descripción:</b> ${negocio.descripcion}.</p><br>
+            <p><b>Direccion:</b> ${negocio.direccion}.</p><br>
+            <p><b>Correo Electrónico:</b> ${negocio.email}.</p><br>
+            <p><b>Teléfono de contacto:</b> ${negocio.telefono}.</p><br>
+            <p><b>Días y Horarios de Atención:</b> ${negocio.horario}.</p><br>
             `;
-             
         }
      });
  

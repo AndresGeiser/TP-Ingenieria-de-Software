@@ -6,9 +6,7 @@
 .contenedor {
     width: 100%;
     display: grid;
-    column-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     background: #C6FFDD;
     background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
     background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
@@ -17,8 +15,6 @@
 .contenedor header {
     height: 100px;
     background: royalblue;
-    grid-column-start: 1;
-    grid-column-end: -1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,8 +57,6 @@
 }
 
 .contenedor .menu {
-    grid-column-start: 1;
-    grid-column-end: -1;
     background: brown;
     display: flex;
     font-family: sans-serif ;
@@ -84,12 +78,12 @@
     width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 20px;  
-    grid-row-start: 3;
-    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor aside .filtros {
+    width: 50%;
     border-radius: 20px;
     border: 1px solid gray;
     font: 100% sans-serif;
@@ -131,22 +125,22 @@
     margin-bottom: 10px
 }
 
+.contenedor .cont_mapa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .contenedor #mapid {
+    width: 70%;
+    height: 500px;
     margin: 20px;
     border: 1px solid black;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: -1;
 }
 
 .contenedor .publicaciones {
     width: 100%;
-    height: 1000px;
-    margin-left: 20px;  
     border-radius: 30px;
-    grid-row-start: 4;
-    grid-row-end: 5;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around; 
@@ -155,22 +149,16 @@
 
 .contenedor .publicaciones .card {
     width: 185px;
-    height: 260px;
+    height: 280px;
     background: white;
     font: 100% sans-serif;
     border-radius: 30px;
     margin: 15px;
-    transition: all 0.25s;
     border: 1px solid gray;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;  
     overflow: hidden;
     cursor: pointer;
-}
-
-.publicaciones .card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-10px)
 }
 
 .publicaciones .card img {
@@ -181,6 +169,7 @@
 .publicaciones .card .datos {
     padding: 13px;
     text-align: center;
+    padding-bottom: 0px;
 }
 
 .publicaciones .card .datos h3 {
@@ -192,10 +181,22 @@
     line-height: 3;
 }
 
+.publicaciones .card button {
+    width: 100%;
+    height: 30px;
+    background: royalblue;
+    color: white;
+    border: none;  
+    cursor: pointer;
+}
+
+.publicaciones .card button:hover {
+    font-weight: bold;
+}
+
+
 .contenedor footer {
     margin-top: 100px;
-    grid-column-start: 1;
-    grid-column-end: -1;
     background: black;
     color: white;
     height: 100px;
