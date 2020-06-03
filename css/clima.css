@@ -233,3 +233,59 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/*Alertas almacenadas*/
+.alertas .alerta_Almacenada {
+    margin : 20px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.alertas .alerta_Almacenada .AL {
+    background-color: rgba(83, 85, 224, 0.623);
+    border-bottom: 2px solid gray;
+    color: rgba(36, 36, 36, 0.993);
+}
+
+.alertas .alerta_Almacenada .AC {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid gray;
+    color: rgba(36, 36, 36, 0.993);
+}
+
+.alertas .alerta_Almacenada .AC h2{
+    color: red;
+}
+
+.alertas .alerta_Almacenada h2 {
+    padding: 4px;
+}
+
+.alertas .alerta_Almacenada .zonas p {
+    padding: 7px;
+    color: rgba(77, 76, 76, 0.993);
+    text-align: justify;
+    border-bottom: 2px solid gray;
+}
+
+.alertas .alerta_Almacenada .datos p {
+    padding: 7px;
+    text-align: justify;
+    align-content: center;
+}
+
+.alertas .alerta_Almacenada .fecha p {
+    padding: 7px;
+    color: rgba(77, 76, 76, 0.993);
+    text-align: justify;
+    align-content: center;
+}
+
+.alertas .alerta_Almacenada .update {
+    text-align: justify;
+    border-top: 2px solid gray;
+    color: rgba(77, 76, 76, 0.993);
+}
