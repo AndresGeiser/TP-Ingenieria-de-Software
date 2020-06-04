@@ -6,6 +6,7 @@
 .contenedor {
     width: 100%;
     display: grid;
+    font: 110% sans-serif;
     column-gap: 20px;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, auto);
@@ -37,7 +38,6 @@
     margin-right: 25px;
     padding: 10px;
     border-radius: 30px;
-    font: 110% sans-serif;
 }
 
 .registrarse {
@@ -61,7 +61,6 @@
 .contenedor .menu {
     background: brown;
     display: flex;
-    font-family: sans-serif ;
 }
 
 .contenedor .menu a {
@@ -77,15 +76,24 @@
 
 .contenedor main {
     width: 90%;
-    height: 100vh;
+    height: auto;
     margin: auto;
     text-align: center;
 }
 
-.contenedor main h2 {
-    font-size: 40px;
-    margin-top: 30px;
+.contenedor main h1 {
+    line-height: 150px;
+    font-size: 60px;
+}
+
+.contenedor main p {
+    font-size: 20px;
     margin-bottom: 30px;
+}
+
+.contenedor main q {
+    font-size: 18px;
+    font-style: italic;
 }
 
 .contenedor footer {
@@ -93,7 +101,6 @@
     background: black;
     color: white;
     height: 100px;
-    font-family: sans-serif;
     font-size: 12px;
     display: flex;
     justify-content: center;
