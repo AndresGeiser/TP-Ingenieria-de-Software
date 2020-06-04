@@ -33,14 +33,25 @@
             <div class="clima" id = "clima">
                 
             </div>
-            <div class="alertas" id = "alertas">
+
+            <div class ="selectorDeApi" id = "selectorDeApi">
                 <h2>Alertas</h2>
                 <select name="api" id="api">
                     <option value="snm">SNM</option>
                     <option value="almacenadas">Alertas almacenadas</option>
                 </select>
-                <button class="obtener">Obtener</button>
+                <button class="obtener" id = "obtener" onclick="cambiarAlertas()">Obtener</button>
+
             </div>
+
+            <div class="alertas" id = "alertas">
+               
+            </div>
+
+            <div class="alertasAlmacenadas" id ="alertasAlmacenadas">
+
+            </div>
+
         </main>
 
         <footer>

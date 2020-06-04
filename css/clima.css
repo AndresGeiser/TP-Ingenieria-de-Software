@@ -153,13 +153,17 @@ main {
     text-align: center;
 }
 
-.alertas #api {
+.selectorDeApi{
+    text-align: center;
+}
+
+.selectorDeApi #api {
     margin-top: 20px;
     padding: 4px;
     font-size: 14px;
 }
 
-.alertas .obtener {
+.selectorDeApi .obtener {
     margin-top: 20px;
     padding: 4px;
     font-size: 14px;
@@ -169,7 +173,7 @@ main {
     cursor: pointer;
 }
 
-.alertas .obtener:hover {
+.selectorDeApi .obtener:hover {
     background: grey;
 }
 
@@ -235,7 +239,17 @@ footer {
 }
 
 /*Alertas almacenadas*/
-.alertas .alerta_Almacenada {
+.alertasAlmacenadas  {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 200px;
+    font: 110% sans-serif;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+
+.alertasAlmacenadas .almacenada {
     margin : 20px;
     background-color: white;
     border: 2px solid gray;
@@ -244,47 +258,47 @@ footer {
 }
 
 
-.alertas .alerta_Almacenada .AL {
+.alertasAlmacenadas .almacenada .AL {
     background-color: rgba(83, 85, 224, 0.623);
     border-bottom: 2px solid gray;
     color: rgba(36, 36, 36, 0.993);
 }
 
-.alertas .alerta_Almacenada .AC {
-    background-color: rgb(0, 0, 0);
+.alertasAlmacenadas .almacenada .AC {
+    background-color: rgba(243, 97, 0, 0.664);
     border-bottom: 2px solid gray;
     color: rgba(36, 36, 36, 0.993);
 }
 
-.alertas .alerta_Almacenada .AC h2{
-    color: red;
+.alertasAlmacenadas .almacenada .AC h2{
+    color: black;
 }
 
-.alertas .alerta_Almacenada h2 {
+.alertasAlmacenadas .almacenada h2 {
     padding: 4px;
 }
 
-.alertas .alerta_Almacenada .zonas p {
+.alertasAlmacenadas .almacenada .zonas p {
     padding: 7px;
     color: rgba(77, 76, 76, 0.993);
     text-align: justify;
     border-bottom: 2px solid gray;
 }
 
-.alertas .alerta_Almacenada .datos p {
+.alertasAlmacenadas .almacenada .datos p {
     padding: 7px;
     text-align: justify;
     align-content: center;
 }
 
-.alertas .alerta_Almacenada .fecha p {
+.alertasAlmacenadas .almacenada .fecha p {
     padding: 7px;
     color: rgba(77, 76, 76, 0.993);
     text-align: justify;
     align-content: center;
 }
 
-.alertas .alerta_Almacenada .update {
+.alertasAlmacenadas .almacenada .update {
     text-align: justify;
     border-top: 2px solid gray;
     color: rgba(77, 76, 76, 0.993);

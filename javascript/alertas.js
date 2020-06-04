@@ -1,6 +1,7 @@
-function bootstrap()
+$(document).ready(function()
 {
-  //Alertas del SNM
+ 
+    //Alertas del SNM
     // Se hace el fetch a tu url
     fetch('https://ws.smn.gob.ar/alerts/type/AL')
     .then(function(response) {
@@ -9,7 +10,7 @@ function bootstrap()
     })
     .then(function(myJson) {
     //Referencia al contenedor donde se ubicaran las alertas    
-    const contenedor = document.querySelector('#alertas');
+    var contenedor = document.querySelector('#alertas');
     
 
     //Para cada alerta se agregan los datos a clima.html
@@ -27,7 +28,7 @@ function bootstrap()
 
         contenedor.innerHTML += `
         <div class = "alerta" >
-          <div class = "${e.status}"> 
+          <div class = "${e.status}"  > 
           <h2> <i class="fas fa-exclamation-triangle"></i> ${e.status + ": " + e.title}  </h2>
           </div>
           <div class = "zonas" >
@@ -48,6 +49,9 @@ function bootstrap()
     
     //Alertas almacenadas
     var diasAlerta = [0,1,2,3];
+
+
+    contenedor = document.querySelector('#alertasAlmacenadas');
 
     for (var dia in diasAlerta) 
     {
@@ -78,7 +82,7 @@ function bootstrap()
                 {
                 //Cargamos los datos de las alertas almacenadas
                 contenedor.innerHTML += `
-                <div class = "alerta_Almacenada" >
+                <div class = "almacenada" id = "almacenada" >
                   <div class = "${datos.type}"> 
                     <h2> <i class="fas fa-exclamation-triangle"></i> ${datos.status + ": " + datos.title}  </h2>
                   </div>
@@ -96,11 +100,11 @@ function bootstrap()
                 </div>  
                 `
                 } 
-                else //Alertas Simples
+                else //Alertas Simples/Rápidas
                 contenedor.innerHTML += `
-                <div class = "alerta_Almacenada" >
+                <div class = "almacenada" id = "almacenada" >
                   <div class = "${datos.type}"> 
-                    <h2> <i class="fas fa-exclamation-triangle"></i> ${datos.title}  </h2>
+                    <h2> <i class="fas fa-exclamation-circle"></i> ${datos.title}  </h2>
                   </div>
                   <div class = "zonas" >
                     <p> <i class="fas fa-map-marker-alt"> </i> <b>Zonas</b>:  ${zonasAfectadas} </p>
@@ -109,18 +113,32 @@ function bootstrap()
                     <p> <i class="fas fa-calendar-alt"></i>  <b>Fecha de emisión</b>: ${datos.date} </p>
                 </div>  
                 `
-
-
     
             }
     
         });
-
-
     }
 
+    });    
+});
 
-    });
+//Para ocultar/mostrar el tipo de alerta preferida
+function cambiarAlertas(){
+  var eleccion = $("#api :selected").text();
+  const contenedorAlertasSNM = document.querySelector('#alertas');;
+  const contenedorAlertasAlm = document.querySelector('#alertasAlmacenadas');;
+
+  if (eleccion == "SNM")
+  {
+    contenedorAlertasSNM.style.display = "block";
+    contenedorAlertasAlm.style.display = "none";
+
+  }
+
+  if (eleccion == "Alertas almacenadas")
+  {
+    contenedorAlertasSNM.style.display = "none";
+    contenedorAlertasAlm.style.display = "block"; 
+  }
+
 }
-
-$(bootstrap)
