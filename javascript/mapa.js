@@ -1,28 +1,30 @@
-var marcadores = [];
-var ubicaciones = [];
-var map;
 
-function cargarUbicaciones(negocios)
-{
+var marcadores = [];
+var mapa;
+
+
+function cargarUbicaciones(negocios) {
+
     var ungsLocation = [-34.5221554, -58.7000067];
-    map = L.map('mapid').setView(ungsLocation, 15);
+    mapa = L.map('mapid').setView(ungsLocation, 15);
   
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    }).addTo(mapa);
     
     //Añadimos un marcador por cada negocio
+    var ubicaciones = [];//Contendra las lat y long de los negocios para despues centrar el mapa en ellas
     var marker;
     negocios.forEach(negocio => {
-        marker = L.marker([negocio.latitud, negocio.longitud], {title: negocio.id}).bindPopup(negocio.nombre);//Le indicamos un title con el id del negocio para despues identificarlo 
-        marker.addTo(map);
+        //Agregamos un title al marcador para identificarlo
+        marker = L.marker([negocio.latitud, negocio.longitud], {title: negocio.id}).bindPopup(`<div class="popup"><h2>${negocio.nombre}</h2>${negocio.servicio}<br>${negocio.horario}</div>`);
+        marker.addTo(mapa);
         marcadores.push(marker);
-        ubicaciones.push([negocio.latitud, negocio.longitud]); //Vamos guardando las lat y long para centrar el mapa despues centrar el mapa en ellas
+        ubicaciones.push([negocio.latitud, negocio.longitud]);
     });
 
     //Centramos el mapa en las ubicaciones de los negocios
-    map.fitBounds(new L.LatLngBounds(ubicaciones));
-
+    mapa.fitBounds(new L.LatLngBounds(ubicaciones));
 }
 
 
@@ -34,11 +36,8 @@ function centrarMapa(seleccionado) {
   marcadores.forEach(marker => {
     if (marker.options.title == id) {
       marker.openPopup(); 
-      map.setView(marker.getLatLng(), 15); 
+      mapa.setView(marker.getLatLng(), 15);//Centramos el mapa en el marcador 
     }
   });
 
 }
-
-
-
