@@ -17,19 +17,19 @@ $(document).ready(function() {
         })
 });
 
-function cargarNegocios(datos) {
+function cargarNegocios(negocios) {
     
-    for (let item of datos) {
+    for (let negocio of negocios) {
 
         info.innerHTML +=` 
-        <div class="${item.tipo}" id="${item.id}" onclick="centrarMapa(this)">
+        <div class="${negocio.tipo}" id="${negocio.id}" onclick="centrarMapa(this)">
         <figure>
-            <img src="${item.foto}" alt="Foto de perro">
+            <img src="${negocio.foto}" alt="Foto de perro">
         </figure>
         <div class="datos">
-            <h3>${item.nombre}</h3>
-            <h4>${item.negocio}</h4>
-            <p>${item.horario}</p>
+            <h3>${negocio.nombre}</h3>
+            <h4>${negocio.servicio}</h4>
+            <p>${negocio.horario}</p>
         </div>
         <div>
             <button onclick="mostrarDetalles(this)">Ver mas</button>
@@ -105,7 +105,7 @@ function mostrarDetalles(seleccionado) {
             foto.src = negocio.foto;
             info.innerHTML = `
             <p><b>Nombre de Negocio:</b> ${negocio.nombre}.</p><br>
-            <p><b>Tipo:</b> ${negocio.negocio}.</p><br>
+            <p><b>Servicio:</b> ${negocio.servicio}.</p><br>
             <p><b>Descripción:</b> ${negocio.descripcion}.</p><br>
             <p><b>Direccion:</b> ${negocio.direccion}.</p><br>
             <p><b>Correo Electrónico:</b> ${negocio.email}.</p><br>
