@@ -18,10 +18,12 @@ $(document).ready(function() {
 });
 
 function cargarNegocios(negocios) {
-    
+
+    var publicaciones = document.querySelector('.publicaciones');
+
     for (let negocio of negocios) {
 
-        info.innerHTML +=` 
+        publicaciones.innerHTML +=` 
         <div class="${negocio.tipo}" id="${negocio.id}" onclick="centrarMapa(this)">
         <figure>
             <img src="${negocio.foto}" alt="Foto de perro">

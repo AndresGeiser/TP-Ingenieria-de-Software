@@ -1,3 +1,4 @@
+var avisos;
 
 $(document).ready(function() {
     
@@ -5,47 +6,35 @@ $(document).ready(function() {
     
     $(".btn_filtrar").click(filtrar);
     
-    traerDatos();
-    
+    fetch("./avisos.json")
+        .then(function(res) {
+            return res.json();
+        })
+        .then(function(datos) {
+            avisos = datos;
+            cargarAvisos(datos);
+        })
 });
 
-var datos;
+function cargarAvisos(avisos){
 
+    var publicaciones = document.querySelector('.publicaciones');
+   
+    for (let aviso of avisos) {
 
-function traerDatos(){
-
-    const xhttp = new XMLHttpRequest();
-
-    xhttp.open('GET', 'avisos.json', true);
-
-    xhttp.send();
-
-    xhttp.onreadystatechange = function(){
-        
-        if(this.readyState == 4 && this.status ==200){
-            
-            datos = JSON.parse(this.responseText);
-            
-            let res = document.querySelector('#res');
-            res.innerHTML = '';
-
-            for (let item of datos) {
-
-                res.innerHTML +=` 
-                <div class= "${item.tipo}" id="${item.id}" onclick="mostrarDetalles(this)">
-                <figure>
-                     <img src="${item.foto}" alt="Foto de perro">
-                </figure>
-                 <div class="datos">
-                     <h3>${item.nombre}</h3>
-                     <p>${item.estado}</p>
-                     <p>Edad: ${item.edad}</p>
-                     <p>Raza: ${item.raza}</p>
-                 </div>
-                </div>
-                ` 
-            }
-        }
+        publicaciones.innerHTML +=` 
+        <div class= "${aviso.tipo}" id="${aviso.id}" onclick="mostrarDetalles(this)">
+        <figure>
+                <img src="${aviso.foto}" alt="Foto de perro">
+        </figure>
+            <div class="datos">
+                <h3>${aviso.nombre}</h3>
+                <p>${aviso.estado}</p>
+                <p>Edad: ${aviso.edad}</p>
+                <p>Raza: ${aviso.raza}</p>
+            </div>
+        </div>
+        ` 
     }
 }
 
@@ -129,7 +118,7 @@ function mostrarDetalles(seleccionado) {
     var foto =  document.querySelector('.cont_ventana .ventana figure img');
     var info =  document.querySelector('.cont_ventana .ventana .info');
     
-    datos.forEach(aviso => {
+    avisos.forEach(aviso => {
        if(aviso.id == seleccionado.id) {
             foto.src = aviso.foto;
             if(aviso.estado == 'En adopción') {
