@@ -1,4 +1,3 @@
-
 body h1{
     color: aliceblue;
     font-size: 15px;
@@ -8,24 +7,47 @@ body h1{
     margin-bottom: 10px;
 }
 
-#iniciarSesion{
+#visitar{
+    font: oblique bold 150% cursive;
+    text-decoration: none;
+    
+}
+
+
+#registro{
     text-align: center;
 }
 
+#formularioReg{
+    display: inline-block;
+    font: 110% sans-serif;
+
+}
+
+#formularioReg a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#formularioReg a:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px)
+}
 
 form input{
     cursor :  text;
     margin: 10px;
     padding : 4px;
     display: block;
-    
 }
 
 hr{
     height: 2px;
     border: none;
     background-color: black;
-    
 }
 
 body {
@@ -37,34 +59,12 @@ body {
     
     
 }
-#iniciarSesion{
-    font: 110% sans-serif;
-
-}
-
-#iniciarSesion a{
-    font-size: 20px;
-    color:black;
-    text-decoration: none;
-    cursor: pointer;
-    display: block;
-    padding-bottom: 10px;
-}
-
-#iniciarSesion a:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-2px);
-}
 
 
-#formulario{
-    display: inline-block;   
-}
-
-#formulario input{
+#registro input{
     text-align: left;
     border: red;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: white;
 
 }
