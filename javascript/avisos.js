@@ -1,19 +1,10 @@
-var avisos;
-
 $(document).ready(function() {
     
     $(".cerrar").click(cerrarVentana); 
     
     $(".btn_filtrar").click(filtrar);
     
-    fetch("./avisos.json")
-        .then(function(res) {
-            return res.json();
-        })
-        .then(function(datos) {
-            avisos = datos;
-            cargarAvisos(datos);
-        })
+    cargarAvisos(avisos);
 });
 
 function cargarAvisos(avisos){
