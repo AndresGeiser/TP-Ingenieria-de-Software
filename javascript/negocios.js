@@ -1,20 +1,11 @@
-var negocios;
-
 $(document).ready(function() {
     
     $(".cerrar").click(cerrarVentana); 
     
     $(".btn_filtrar").click(filtrar);  
 
-    fetch("./negocios.json")
-        .then(function(res) {
-            return res.json();
-        })
-        .then(function(datos) {
-            negocios = datos;
-            cargarNegocios(datos);
-            cargarUbicaciones(datos);
-        })
+    cargarNegocios(negocios)
+    cargarUbicaciones(negocios)
 });
 
 function cargarNegocios(negocios) {
